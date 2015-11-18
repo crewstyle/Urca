@@ -1,0 +1,29 @@
+{
+  "name": "yohoho.urca",
+  "version": "1.0.0",
+  "homepage": "https://github.com/crewstyle/urca",
+  "authors": [
+    "Achraf Chouk <achrafchouk@gmail.com>"
+  ],
+  "description": "an other \"best\" grid system, no frustrations inside - guaranteed!",
+  "main": "dist/gryd.css",
+  "keywords": [
+    "urca",
+    "gryd",
+    "grid",
+    "flex",
+    "css",
+    "less",
+    "mobile",
+    "first",
+    "responsive"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

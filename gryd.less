@@ -1,0 +1,316 @@
+/*!
+ * Urca Gryd v2.0.0 - "Banane ou crocodile, c'est quoi la différence ? Les deux se mangent, non ? - One Piece"
+ * Copyright 2015 Achraf Chouk <achrafchouk@gmail.com>
+ *
+ * gryd.less
+ */
+
+
+@columnWidth: (100% / 12);
+@gutterWidth: 2%;
+
+.row, .rows {
+    list-style: none;
+    margin-bottom: 0;
+    margin-left: -(@gutterWidth / 2);
+    margin-right: -(@gutterWidth / 2);
+    margin-top: 0;
+    padding: 0;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-basis: 100%;
+    -ms-flex-basis: 100%;
+    flex-basis: 100%;
+
+
+    //-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› ROWS
+
+    .row, .rows {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+    //-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› COLUMNS
+
+    .col, .cols {
+        display: inline-block;
+        list-style: none;
+        margin-left: (@gutterWidth / 2);
+        margin-right: (@gutterWidth / 2);
+        padding-left: 0;
+        padding-right: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+        -webkit-align-self: auto;
+        align-self: auto;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+
+        //-› align-self › auto | flex-start | flex-end | center | baseline | stretch
+        &.align-s-auto {
+            -webkit-align-self: auto;
+            align-self: auto;
+        }
+        &.align-s-flex-start {
+            -webkit-align-self: flex-start;
+            align-self: flex-start;
+        }
+        &.align-s-flex-end {
+            -webkit-align-self: flex-end;
+            align-self: flex-end;
+        }
+        &.align-s-center {
+            -webkit-align-self: center;
+            align-self: center;
+        }
+        &.align-s-baseline {
+            -webkit-align-self: baseline;
+            align-self: baseline;
+        }
+        &.align-s-stretch {
+            -webkit-align-self: stretch;
+            align-self: stretch;
+        }
+
+        //-› flex-basis
+        &.flex-b-auto {
+            -webkit-flex-basis: auto;
+            flex-basis: auto;
+        }
+
+
+        //-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› SIZES
+
+        &.one {
+            width: (@columnWidth - @gutterWidth);
+        }
+        &.two {
+            width: ((@columnWidth * 2) - @gutterWidth);
+        }
+        &.three {
+            width: ((@columnWidth * 3) - @gutterWidth);
+        }
+        &.four {
+            width: ((@columnWidth * 4) - @gutterWidth);
+        }
+        &.five {
+            width: ((@columnWidth * 5) - @gutterWidth);
+        }
+        &.six {
+            width: ((@columnWidth * 6) - @gutterWidth);
+        }
+        &.seven {
+            width: ((@columnWidth * 7) - @gutterWidth);
+        }
+        &.eight {
+            width: ((@columnWidth * 8) - @gutterWidth);
+        }
+        &.nine {
+            width: ((@columnWidth * 9) - @gutterWidth);
+        }
+        &.ten {
+            width: ((@columnWidth * 10) - @gutterWidth);
+        }
+        &.eleven {
+            width: ((@columnWidth * 11) - @gutterWidth);
+        }
+        &.twelve {
+            width: ((@columnWidth * 12) - @gutterWidth);
+        }
+
+        &.one, &.two, &.three, &.four, &.five, &.six, &.seven, &.eight, &.nine, &.ten, &.eleven, &.twelve {
+            -webkit-flex: none;
+            -ms-flex: none;
+            flex: none;
+        }
+    }
+
+
+    //-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› OPTIONS
+
+    //-› align-content › flex-start | flex-end | center | space-between | space-around | stretch
+    &.align-c-flex-start {
+        -webkit-align-content: flex-start;
+        align-content: flex-start;
+    }
+    &.align-c-flex-end {
+        -webkit-align-content: flex-end;
+        align-content: flex-end;
+    }
+    &.align-c-center {
+        -webkit-align-content: center;
+        align-content: center;
+    }
+    &.align-c-space-between {
+        -webkit-align-content: space-between;
+        align-content: space-between;
+    }
+    &.align-c-space-around {
+        -webkit-align-content: space-around;
+        align-content: space-around;
+    }
+    &.align-c-stretch {
+        -webkit-align-content: stretch;
+        align-content: stretch;
+    }
+
+    //-› align-items › flex-start | flex-end | center | baseline | stretch
+    &.align-i-flex-start {
+        -webkit-align-items: flex-start;
+        align-items: flex-start;
+    }
+    &.align-i-flex-end {
+        -webkit-align-items: flex-end;
+        align-items: flex-end;
+    }
+    &.align-i-center {
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    &.align-i-baseline {
+        -webkit-align-items: baseline;
+        align-items: baseline;
+    }
+    &.align-i-stretch {
+        -webkit-align-items: stretch;
+        align-items: stretch;
+    }
+
+    //-› flex-direction › row | row-reverse | column | column-reverse
+    &.flex-d-row {
+        -webkit-flex-direction: row;
+        flex-direction: row;
+    }
+    &.flex-d-row-reverse {
+        -webkit-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    }
+    &.flex-d-column {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+    &.flex-d-column-reverse {
+        -webkit-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+
+    //-› flex-wrap › nowrap | wrap | wrap-reverse
+    &.flex-w-nowrap {
+        -webkit-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
+    &.flex-w-wrap {
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    &.flex-w-wrap-reverse {
+        -webkit-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    }
+
+    //-› justify-content › flex-start | flex-end | center | space-between | space-around
+    &.justify-c-flex-start {
+        -webkit-justify-content: flex-start;
+        justify-content: flex-start;
+    }
+    &.justify-c-flex-end {
+        -webkit-justify-content: flex-end;
+        justify-content: flex-end;
+    }
+    &.justify-c-center {
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+    &.justify-c-space-between {
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+    }
+    &.justify-c-space-around {
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
+    }
+
+
+    //-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› COLUMNS & OPTIONS
+
+    //-› nested rows
+    &.nested {
+        .col, .cols {
+            margin-left: 0;
+            margin-right: 0;
+
+            &.one {
+                width: @columnWidth;
+            }
+            &.two {
+                width: (@columnWidth * 2);
+            }
+            &.three {
+                width: (@columnWidth * 3);
+            }
+            &.four {
+                width: (@columnWidth * 4);
+            }
+            &.five {
+                width: (@columnWidth * 5);
+            }
+            &.six {
+                width: (@columnWidth * 6);
+            }
+            &.seven {
+                width: (@columnWidth * 7);
+            }
+            &.eight {
+                width: (@columnWidth * 8);
+            }
+            &.nine {
+                width: (@columnWidth * 9);
+            }
+            &.ten {
+                width: (@columnWidth * 10);
+            }
+            &.eleven {
+                width: (@columnWidth * 11);
+            }
+            &.twelve {
+                width: (@columnWidth * 12);
+            }
+        }
+    }
+
+    //-› flex-direction
+    &.flex-d-row,
+    &.flex-d-row-reverse,
+    &.flex-d-column,
+    &.flex-d-column-reverse {
+        .col, .cols {
+            -webkit-align-self: flex-start;
+            align-self: flex-start;
+        }
+    }
+
+    //-› justify-content
+    &.justify-c-flex-start,
+    &.justify-c-flex-end,
+    &.justify-c-center,
+    &.justify-c-space-between,
+    &.justify-c-space-around {
+        .col, .cols {
+            -webkit-flex: none;
+            -ms-flex: none;
+            flex: none;
+        }
+    }
+}
