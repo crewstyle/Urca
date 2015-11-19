@@ -1,7 +1,7 @@
 /*! *//*!
  * ~~~~~~~~~~~~~~~~~~
- * Gryd from Urca - ﬂ®Ú∂ ƒ®œµ ª®©æ
- * https://github.com/crewstyle/urca
+ * Urca - ª®©æ
+ * https://github.com/crewstyle/Urca
  * ~~~~~~~~~~~~~~~~~~
  * Copyright 2015 Achraf Chouk <achrafchouk@gmail.com>
  */
@@ -12,9 +12,10 @@ module.exports = function (grunt){
     grunt.initConfig({
         //project settings
         yohoho: {
-            name: 'gryd',
+            name: 'urca',
             path: {
-                src: '.',
+                bow: 'bower_components',
+                src: 'src',
                 tar: 'dist'
             },
             vars: {
@@ -48,8 +49,9 @@ module.exports = function (grunt){
                     optimization: 2
                 },
                 files: {
-                    '<%= yohoho.path.tar %>/<%= yohoho.name %>.css': [
-                        '<%= yohoho.path.src %>/<%= yohoho.name %>.less'
+                    '<%= yohoho.path.tar %>/standalone/<%= yohoho.name %>.css': [
+                        //Gryd
+                        '<%= yohoho.path.src %>/less/gryd.less'
                     ]
                 }
             }
@@ -60,7 +62,10 @@ module.exports = function (grunt){
             compress: {
                 files: {
                     '<%= yohoho.path.tar %>/<%= yohoho.name %>.min.css': [
-                        '<%= yohoho.path.tar %>/<%= yohoho.name %>.css'
+                        //Normalize.css
+                        '<%= yohoho.path.bow %>/normalize-css/normalize.css',
+                        //Urca
+                        '<%= yohoho.path.tar %>/standalone/<%= yohoho.name %>.css'
                     ]
                 }
             }

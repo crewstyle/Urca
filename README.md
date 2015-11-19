@@ -1,4 +1,4 @@
-# Gryd from Urca
+# Urca
 
 _an other "best" grid system, no frustrations inside - guaranteed!_  
 [![npm version](https://badge.fury.io/js/yohoho.urca.svg)](https://badge.fury.io/js/yohoho.urca)
@@ -22,7 +22,7 @@ npm install yohoho.urca
 
 ````html
 <!-- In your <head> HTML tag -->
-<link rel="stylesheet" href="gryd.min.css" />
+<link rel="stylesheet" href="https://cdn.rawgit.com/crewstyle/Urca/master/dist/urca.min.css"/>
 
 <!-- In your <body> HTML tag -->
 <section class="row align-i-stretch">
@@ -42,4 +42,4 @@ Made with ♥ by **[Achraf Chouk](http://github.com/crewstyle "Achraf Chouk")**
 + http://twitter.com/crewstyle
 + http://github.com/crewstyle
 
-Please, read [LICENSE](https://github.com/crewstyle/urca/blob/master/LICENSE "LICENSE") for more details.
+Please, read [LICENSE](https://github.com/crewstyle/Urca/blob/master/LICENSE "LICENSE") for more details.
