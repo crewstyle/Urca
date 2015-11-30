@@ -1,0 +1,92 @@
+header,
+section {
+    border-bottom: 10px solid rgba(160,177,193,.25);
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+header p {
+    margin: 0;
+}
+
+footer p {
+    margin: 0 0 50px;
+}
+
+h3.serif {
+    font-size: 16px;
+    font-style: italic;
+}
+
+hr {
+    opacity: .5;
+}
+
+.btn.focused {
+    background-color: #cfd9db;
+    background-image: -webkit-linear-gradient(top, #dde4e6, #cfd9db);
+    background-image: linear-gradient(top, #dde4e6, #cfd9db);
+    border-color: #c0cdd1;
+    border-bottom-color: #b1c2c6;
+    box-shadow: 0 0 0 2px rgba(206, 215, 223, 0.5);
+    color: #272727;
+    text-decoration: none;
+}
+.btn.link.focused {
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-bottom-color: transparent;
+    box-shadow: none;
+    text-decoration: underline;
+}
+.btn.primary.focused {
+    background-color: #007ba9;
+    background-image: -webkit-linear-gradient(top, #008dc3, #007ba9);
+    background-image: linear-gradient(top, #008dc3, #007ba9);
+    color: #ffffff;
+    border-color: #006890;
+    border-bottom-color: #005676;
+    box-shadow: 0 0 0 2px rgba(0, 160, 220, 0.5);
+}
+.btn.success.focused {
+    background-color: #25a25a;
+    background-image: -webkit-linear-gradient(top, #29b765, #25a25a);
+    background-image: linear-gradient(top, #29b765, #25a25a);
+    color: #ffffff;
+    border-color: #208e4e;
+    border-bottom-color: #1b7943;
+    box-shadow: 0 0 0 2px rgba(46, 204, 113, 0.5);
+}
+.btn.warning.focused {
+    background-color: #c87f0a;
+    background-image: -webkit-linear-gradient(top, #e08e0b, #c87f0a);
+    background-image: linear-gradient(top, #e08e0b, #c87f0a);
+    color: #ffffff;
+    border-color: #b06f09;
+    border-bottom-color: #976008;
+    box-shadow: 0 0 0 2px rgba(243, 156, 18, 0.5);
+}
+.btn.alert.focused {
+    background-color: #d62c1a;
+    background-image: -webkit-linear-gradient(top, #e43725, #d62c1a);
+    background-image: linear-gradient(top, #e43725, #d62c1a);
+    color: #ffffff;
+    border-color: #bf2718;
+    border-bottom-color: #a82315;
+    box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.5);
+}
+
+/*pre[class*="language-"] {
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-shadow: 0 0 0 3px #eee;
+    color: #4d4d4c;
+    font-size: 14px;
+    padding: 10px;
+}
+pre[class*="language-"] code {
+    background-color: transparent;
+    padding: 0;
+}*/

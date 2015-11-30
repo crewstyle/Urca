@@ -1,0 +1,60 @@
+/*!
+ * Copyright 2015 Achraf Chouk <achrafchouk@gmail.com>
+ * https://github.com/crewstyle/Urca/blob/master/src/less/06.tables.less ~ Urca v2.0.0
+ */
+
+
+table {
+    empty-cells: show;
+    margin-bottom: 20px;
+    max-width: 100%;
+    width: 100%;
+
+    caption {
+        color: @blackcolor;
+        font-size: 11px;
+        font-weight: 700;
+        padding: 0;
+        text-transform: uppercase;
+    }
+
+    th,
+    td {
+        border-bottom: 1px solid fade(@blackcolor, 4%);
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: @lightgraycolor;
+        font-weight: 700;
+    }
+
+    tfoot th,
+    tfoot td {
+        color: fade(@blackcolor, 50%);
+    }
+
+
+    //-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› BORDERED
+    &.bordered {
+        margin-top: -1px;
+
+        caption {
+            padding-left: 16px;
+        }
+
+        td,
+        th {
+            border: 1px solid fade(@blackcolor, 3%);
+        }
+    }
+
+
+    //-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› STRIPPED
+    &.stripped {
+        tbody tr:nth-child(odd) td {
+            background-color: darken(@lightgraycolor, 3%);
+        }
+    }
+}

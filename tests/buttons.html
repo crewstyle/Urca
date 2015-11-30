@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Urca Buttons</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="prism/prism.css" />
+    <link rel="stylesheet" href="../dist/urca.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="container small">
+        <header>
+            <h1>Urca &rsaquo; Buttons</h1>
+            <p>Push on it.</p>
+        </header>
+
+        <!-- buttons -->
+        <section>
+            <h2>Getting started</h2>
+
+            <p>Urca's buttons allow for a ton of flexibility when building out user interfaces.<br/>There are two ways to create a button:</p>
+            <ul>
+                <li>The <code>&lt;a&gt;</code> tag if the button is a link to another page</li>
+                <li>The <code>&lt;button&gt;</code> tag if the button performs an action that changes something on the current page</li>
+            </ul>
+
+            <p><button class="btn">default button</button> <button class="btn focused">focused button</button></p>
+
+            <pre><code class="language-markup">
+&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Button&lt;/a&gt;
+&lt;button class=&quot;btn&quot;&gt;Button&lt;/button&gt;
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Options</h2>
+
+            <h3 class="serif">Inline</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#" class="btn">Praesent ultrices nunc</a> ac accumsan maximus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec posuere vitae ipsum quis maximus. Quisque commodo ultricies ligula, id sagittis libero pharetra ut.</p>
+
+            <hr/>
+
+            <h3 class="serif">Colors</h3>
+
+            <table>
+                <tr>
+                    <th>State</th>
+                    <th>Default</th>
+                    <th>Primary</th>
+                    <th>Success</th>
+                    <th>Warning</th>
+                    <th>Alert</th>
+                    <th>Link</th>
+                </tr>
+                <tr>
+                    <td><small><i>Default</i></small></td>
+                    <td><a href="#" class="btn">Button</a></td>
+                    <td><a href="#" class="btn primary">Button</a></td>
+                    <td><a href="#" class="btn success">Button</a></td>
+                    <td><a href="#" class="btn warning">Button</a></td>
+                    <td><a href="#" class="btn alert">Button</a></td>
+                    <td><a href="#" class="btn link">Button</a></td>
+                </tr>
+                <tr>
+                    <td><small><i>Focus or Hover</i></small></td>
+                    <td><a href="#" class="btn focused">Button</a></td>
+                    <td><a href="#" class="btn primary focused">Button</a></td>
+                    <td><a href="#" class="btn success focused">Button</a></td>
+                    <td><a href="#" class="btn warning focused">Button</a></td>
+                    <td><a href="#" class="btn alert focused">Button</a></td>
+                    <td><a href="#" class="btn link focused">Button</a></td>
+                </tr>
+                <tr>
+                    <td><small><i>Disabled</i></small></td>
+                    <td><a href="#" class="btn" disabled>Button</a></td>
+                    <td><a href="#" class="btn primary" disabled>Button</a></td>
+                    <td><a href="#" class="btn success" disabled>Button</a></td>
+                    <td><a href="#" class="btn warning" disabled>Button</a></td>
+                    <td><a href="#" class="btn alert" disabled>Button</a></td>
+                    <td><a href="#" class="btn link" disabled>Button</a></td>
+                </tr>
+                <tr>
+                    <td><small><b>CSS code</b></small></td>
+                    <td><code>.btn</code></td>
+                    <td><code>.btn.primary</code></td>
+                    <td><code>.btn.success</code></td>
+                    <td><code>.btn.warning</code></td>
+                    <td><code>.btn.alert</code></td>
+                    <td><code>.btn.link</code></td>
+                </tr>
+            </table>
+
+            <pre><code class="language-markup">
+&lt;a href=&quot;#&quot; class=&quot;btn primary&quot;&gt;Button .primary&lt;/a&gt;
+&lt;button class=&quot;btn primary&quot;&gt;Button .primary&lt;/button&gt;
+            </code></pre>
+
+            <hr/>
+
+            <h3 class="serif">Sizes</h3>
+
+            <table>
+                <tr>
+                    <th>Size</th>
+                    <th>Extra large</th>
+                    <th>Large</th>
+                    <th>Normal</th>
+                    <th>Small</th>
+                    <th>Extra small</th>
+                </tr>
+                <tr>
+                    <td><small><i>Example</i></small></td>
+                    <td><a href="#" class="btn xlarge">Button</a></td>
+                    <td><a href="#" class="btn large">Button</a></td>
+                    <td><a href="#" class="btn">Button</a></td>
+                    <td><a href="#" class="btn small">Button</a></td>
+                    <td><a href="#" class="btn xsmall">Button</a></td>
+                </tr>
+                <tr>
+                    <td><small><b>CSS code</b></small></td>
+                    <td><code>.btn.xlarge</code></td>
+                    <td><code>.btn.large</code></td>
+                    <td><code>.btn</code></td>
+                    <td><code>.btn.small</code></td>
+                    <td><code>.btn.xsmall</code></td>
+                </tr>
+            </table>
+
+            <pre><code class="language-markup">
+&lt;a href=&quot;#&quot; class=&quot;btn xlarge&quot;&gt;Button .xlarge&lt;/a&gt;
+&lt;button class=&quot;btn xlarge&quot;&gt;Button .xlarge&lt;/button&gt;
+            </code></pre>
+
+            <hr/>
+
+            <h3 class="serif">Specials</h3>
+
+            <p><a href="#" class="btn gdrive">Button Google Drive .gdrive</a></p>
+
+            <pre><code class="language-markup">
+&lt;a href=&quot;#&quot; class=&quot;btn gdrive&quot;&gt;Button Google Drive .gdrive&lt;/a&gt;
+&lt;button class=&quot;btn gdrive&quot;&gt;Button Google Drive .gdrive&lt;/button&gt;
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Combine them all!</h2>
+
+            <p>You can easily combine all options between them.</p>
+
+            <p>
+                <a href="#" class="btn gdrive xlarge">Button</a>
+                <a href="#" class="btn primary large">Button</a>
+                <button class="btn link warning">Button</button>
+                <button class="btn link alert xsmall">Button</button>
+            </p>
+
+            <pre><code class="language-markup">
+&lt;a href=&quot;#&quot; class=&quot;btn gdrive xlarge&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn primary large&quot;&gt;Button&lt;/a&gt;
+&lt;button class=&quot;btn link warning&quot;&gt;Button&lt;/button&gt;
+&lt;button class=&quot;btn link alert xsmall&quot;&gt;Button&lt;/button&gt;
+            </code></pre>
+        </section>
+
+        <footer>
+            <p>Made with ♥ by <a href="https://github.com/crewstyle">Achraf Chouk</a> - <a href="demo.html">All demonstrations</a></p>
+        </footer>
+    </div>
+
+    <script src="prism/prism.js"></script>
+    <script src="prism/remove.js"></script>
+</body>
+</html>

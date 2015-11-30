@@ -1,9 +1,45 @@
 /*!
- * Urca Gryd v2.0.0 - "Banane ou crocodile, c'est quoi la différence ? Les deux se mangent, non ? - One Piece"
+ * Urca v2.0.0 - "Banane ou crocodile, c'est quoi la différence ? Les deux se mangent, non ? - One Piece"
  * Copyright 2015 Achraf Chouk <achrafchouk@gmail.com>
  *
- * https://github.com/crewstyle/Urca/blob/master/src/less/gryd.less
+ * https://github.com/crewstyle/Urca/blob/master/src/less/00.base.less
  */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  background-color: #ffffff;
+}
+body {
+  color: #272727;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+.serif {
+  font-family: 'Arvo', serif;
+}
+
+/*!
+ * Copyright 2015 Achraf Chouk <achrafchouk@gmail.com>
+ * https://github.com/crewstyle/Urca/blob/master/src/less/01.grid.less ~ Urca v2.0.0
+ */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+  width: auto;
+}
+.container.small {
+  max-width: 768px;
+}
 .row,
 .rows {
   list-style: none;
@@ -12,6 +48,7 @@
   margin-right: -1%;
   margin-top: 0;
   padding: 0;
+  width: auto;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -338,83 +375,83 @@
   -webkit-justify-content: space-around;
   justify-content: space-around;
 }
-.row.nested .col,
-.rows.nested .col,
-.row.nested .cols,
-.rows.nested .cols {
+.row.no-gutter .col,
+.rows.no-gutter .col,
+.row.no-gutter .cols,
+.rows.no-gutter .cols {
   margin-left: 0;
   margin-right: 0;
 }
-.row.nested .col.one,
-.rows.nested .col.one,
-.row.nested .cols.one,
-.rows.nested .cols.one {
+.row.no-gutter .col.one,
+.rows.no-gutter .col.one,
+.row.no-gutter .cols.one,
+.rows.no-gutter .cols.one {
   width: 8.33333333%;
 }
-.row.nested .col.two,
-.rows.nested .col.two,
-.row.nested .cols.two,
-.rows.nested .cols.two {
+.row.no-gutter .col.two,
+.rows.no-gutter .col.two,
+.row.no-gutter .cols.two,
+.rows.no-gutter .cols.two {
   width: 16.66666667%;
 }
-.row.nested .col.three,
-.rows.nested .col.three,
-.row.nested .cols.three,
-.rows.nested .cols.three {
+.row.no-gutter .col.three,
+.rows.no-gutter .col.three,
+.row.no-gutter .cols.three,
+.rows.no-gutter .cols.three {
   width: 25%;
 }
-.row.nested .col.four,
-.rows.nested .col.four,
-.row.nested .cols.four,
-.rows.nested .cols.four {
+.row.no-gutter .col.four,
+.rows.no-gutter .col.four,
+.row.no-gutter .cols.four,
+.rows.no-gutter .cols.four {
   width: 33.33333333%;
 }
-.row.nested .col.five,
-.rows.nested .col.five,
-.row.nested .cols.five,
-.rows.nested .cols.five {
+.row.no-gutter .col.five,
+.rows.no-gutter .col.five,
+.row.no-gutter .cols.five,
+.rows.no-gutter .cols.five {
   width: 41.66666667%;
 }
-.row.nested .col.six,
-.rows.nested .col.six,
-.row.nested .cols.six,
-.rows.nested .cols.six {
+.row.no-gutter .col.six,
+.rows.no-gutter .col.six,
+.row.no-gutter .cols.six,
+.rows.no-gutter .cols.six {
   width: 50%;
 }
-.row.nested .col.seven,
-.rows.nested .col.seven,
-.row.nested .cols.seven,
-.rows.nested .cols.seven {
+.row.no-gutter .col.seven,
+.rows.no-gutter .col.seven,
+.row.no-gutter .cols.seven,
+.rows.no-gutter .cols.seven {
   width: 58.33333333%;
 }
-.row.nested .col.eight,
-.rows.nested .col.eight,
-.row.nested .cols.eight,
-.rows.nested .cols.eight {
+.row.no-gutter .col.eight,
+.rows.no-gutter .col.eight,
+.row.no-gutter .cols.eight,
+.rows.no-gutter .cols.eight {
   width: 66.66666667%;
 }
-.row.nested .col.nine,
-.rows.nested .col.nine,
-.row.nested .cols.nine,
-.rows.nested .cols.nine {
+.row.no-gutter .col.nine,
+.rows.no-gutter .col.nine,
+.row.no-gutter .cols.nine,
+.rows.no-gutter .cols.nine {
   width: 75%;
 }
-.row.nested .col.ten,
-.rows.nested .col.ten,
-.row.nested .cols.ten,
-.rows.nested .cols.ten {
+.row.no-gutter .col.ten,
+.rows.no-gutter .col.ten,
+.row.no-gutter .cols.ten,
+.rows.no-gutter .cols.ten {
   width: 83.33333333%;
 }
-.row.nested .col.eleven,
-.rows.nested .col.eleven,
-.row.nested .cols.eleven,
-.rows.nested .cols.eleven {
+.row.no-gutter .col.eleven,
+.rows.no-gutter .col.eleven,
+.row.no-gutter .cols.eleven,
+.rows.no-gutter .cols.eleven {
   width: 91.66666667%;
 }
-.row.nested .col.twelve,
-.rows.nested .col.twelve,
-.row.nested .cols.twelve,
-.rows.nested .cols.twelve {
+.row.no-gutter .col.twelve,
+.rows.no-gutter .col.twelve,
+.row.no-gutter .cols.twelve,
+.rows.no-gutter .cols.twelve {
   width: 100%;
 }
 .row.flex-d-row .col,
@@ -459,4 +496,912 @@
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+}
+@media only screen and (min-width: 320px) and (max-width: 549px) {
+  .hidden-extra-small {
+    display: none;
+  }
+}
+@media only screen and (min-width: 550px) {
+  .row,
+  .rows {
+    max-width: 550px;
+  }
+}
+@media only screen and (min-width: 550px) and (max-width: 719px) {
+  .hidden-small {
+    display: none;
+  }
+}
+@media only screen and (min-width: 720px) {
+  .row,
+  .rows {
+    max-width: 720px;
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 997px) {
+  .hidden-medium {
+    display: none;
+  }
+}
+@media only screen and (min-width: 998px) {
+  .row,
+  .rows {
+    max-width: 998px;
+  }
+}
+@media only screen and (min-width: 998px) and (max-width: 1199px) {
+  .hidden-large {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hidden-extra-large {
+    display: none;
+  }
+  .row,
+  .rows {
+    max-width: 1200px;
+  }
+}
+
+/*!
+ * Copyright 2015 Achraf Chouk <achrafchouk@gmail.com>
+ * https://github.com/crewstyle/Urca/blob/master/src/less/02.typography.less ~ Urca v2.0.0
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: inherit;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small,
+h1 .small,
+h2 .small,
+h3 .small,
+h4 .small,
+h5 .small,
+h6 .small,
+.h1 .small,
+.h2 .small,
+.h3 .small,
+.h4 .small,
+.h5 .small,
+.h6 .small {
+  color: #a0b1c1;
+  font-weight: 400;
+  font-size: 65%;
+  line-height: 1;
+}
+h4 small,
+h5 small,
+h6 small,
+.h4 small,
+.h5 small,
+.h6 small,
+h4 .small,
+h5 .small,
+h6 .small,
+.h4 .small,
+.h5 .small,
+.h6 .small {
+  font-size: 85%;
+}
+h1 {
+  font-size: 1.875rem;
+  line-height: 1.1em;
+  margin-bottom: .6666666667em;
+  margin-top: .6666666667em;
+}
+h2 {
+  font-size: 1.75rem;
+  line-height: 1.0714285714em;
+  margin-bottom: .7142857143em;
+  margin-top: .7142857143em;
+}
+h3 {
+  font-size: 1.375rem;
+  line-height: 1.2em;
+  margin-bottom: .4545454545em;
+  margin-top: .9090909091em;
+}
+h4 {
+  font-size: 1rem;
+  line-height: 1.125em;
+  margin-bottom: .625em;
+  margin-top: .625em;
+}
+h5 {
+  font-size: .875rem;
+  line-height: 1.1428571429em;
+  margin-bottom: .7142857143em;
+  margin-top: .7142857143em;
+}
+h6 {
+  font-size: .75rem;
+  line-height: 1.1666666667em;
+  margin-bottom: .8333333333em;
+  margin-top: .8333333333em;
+}
+a {
+  color: #00a0dc;
+  text-decoration: none;
+}
+a:focus,
+a:hover {
+  color: #005676;
+  text-decoration: underline;
+}
+a:visited {
+  color: #00435d;
+  text-decoration: underline;
+}
+hr {
+  border: 0;
+  border-top: 1px solid #a0b1c1;
+  margin-bottom: 1.25em;
+  margin-top: 1.25em;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.375em;
+  margin: 0 0 .625em;
+}
+p.lead {
+  font-size: 1.25rem;
+  font-weight: 200;
+  line-height: 1.8em;
+  margin-bottom: 1em;
+}
+blockquote {
+  border-left: 5px solid #a0b1c1;
+  margin: 0 0 1.25em;
+  padding: .625em 1.25em;
+}
+blockquote p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6666666667em;
+  margin: 0 0 .5555555556em;
+}
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+blockquote cite {
+  color: #5a5a5a;
+  font-style: 400;
+}
+ul,
+ol {
+  font-size: 1rem;
+  margin-bottom: .625em;
+  margin-top: 0;
+  padding-left: 2.5em;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-bottom: 0;
+}
+ul li.list-title,
+ol li.list-title {
+  color: #a0b1c1;
+  font-size: 90%;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+ul.no-bullet,
+ol.no-bullet {
+  list-style: none;
+}
+dl {
+  font-size: 1rem;
+  margin-bottom: .625em;
+  margin-top: 0;
+}
+dl dt {
+  font-weight: 700;
+  line-height: 1.5em;
+}
+dl dd {
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-left: 0;
+}
+dl dt.list-title {
+  color: #a0b1c1;
+  font-size: 90%;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+abbr[title] {
+  border-bottom: 1px dotted #59626a;
+  cursor: help;
+}
+code {
+  background-color: rgba(160, 177, 193, 0.2);
+  border-radius: 3px;
+  color: #59626a;
+  font-family: Consolas, Menlo, Courier, monospace;
+  font-size: 85%;
+  margin: 0;
+  padding: 3px;
+  white-space: normal;
+}
+pre {
+  background-color: #ffffff;
+  border: 1px solid #afbecb;
+  border-radius: 4px;
+  box-shadow: 0 0 0 2px rgba(160, 177, 193, 0.5);
+  color: #272727;
+  font-size: 14px;
+  padding: 10px;
+}
+pre code {
+  background-color: transparent;
+  padding: 0;
+}
+kbd {
+  background-color: #eff3f6;
+  border-radius: 3px;
+  border: 1px solid #a0b1c1;
+  box-shadow: 0 1px 1px rgba(39, 39, 39, 0.2), inset 0 2px 0 0 rgba(255, 255, 255, 0.7);
+  display: inline-block;
+  font-family: Consolas, Courier, monospace;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: inherit;
+  padding: 2px 4px;
+  white-space: nowrap;
+}
+var {
+  font-style: italic;
+}
+
+/*!
+ * Copyright 2015 Achraf Chouk <achrafchouk@gmail.com>
+ * https://github.com/crewstyle/Urca/blob/master/src/less/03.float.less ~ Urca v2.0.0
+ */
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.float-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*!
+ * Copyright 2015 Achraf Chouk <achrafchouk@gmail.com>
+ * https://github.com/crewstyle/Urca/blob/master/src/less/04.buttons.less ~ Urca v2.0.0
+ */
+.btn,
+button {
+  background-color: #ecf0f1;
+  background-image: -webkit-linear-gradient(top, #dde4e6, #ecf0f1);
+  background-image: linear-gradient(top, #dde4e6, #ecf0f1);
+  border-radius: 2px;
+  border: 1px solid transparent;
+  box-shadow: none;
+  color: #272727;
+  cursor: pointer;
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: 700;
+  height: 2.2em;
+  line-height: 2.2em;
+  outline: 0;
+  padding: 0 1em;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 1px rgba(39, 39, 39, 0.1);
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-transition: background-color ease 0.5s, background-image ease 0.5s, border ease 0.5s, box-shadow ease 0.5s, color ease 0.5s;
+  -moz-transition: background-color ease 0.5s, background-image ease 0.5s, border ease 0.5s, box-shadow ease 0.5s, color ease 0.5s;
+  transition: background-color ease 0.5s, background-image ease 0.5s, border ease 0.5s, box-shadow ease 0.5s, color ease 0.5s;
+}
+.btn:focus,
+button:focus,
+.btn:hover,
+button:hover {
+  background-color: #cfd9db;
+  background-image: -webkit-linear-gradient(top, #dde4e6, #cfd9db);
+  background-image: linear-gradient(top, #dde4e6, #cfd9db);
+  border-color: #c0cdd1;
+  border-bottom-color: #b1c2c6;
+  box-shadow: 0 0 0 2px rgba(160, 177, 193, 0.5);
+  color: #272727;
+  text-decoration: none;
+}
+.btn.primary,
+button.primary {
+  background-color: #00a0dc;
+  background-image: -webkit-linear-gradient(top, #008dc3, #00a0dc);
+  background-image: linear-gradient(top, #008dc3, #00a0dc);
+  color: #ffffff;
+}
+.btn.primary:focus,
+button.primary:focus,
+.btn.primary:hover,
+button.primary:hover {
+  background-color: #007ba9;
+  background-image: -webkit-linear-gradient(top, #008dc3, #007ba9);
+  background-image: linear-gradient(top, #008dc3, #007ba9);
+  color: #ffffff;
+  border-color: #006890;
+  border-bottom-color: #005676;
+  box-shadow: 0 0 0 2px rgba(0, 160, 220, 0.5);
+}
+.btn.success,
+button.success {
+  background-color: #2ecc71;
+  background-image: -webkit-linear-gradient(top, #29b765, #2ecc71);
+  background-image: linear-gradient(top, #29b765, #2ecc71);
+  color: #ffffff;
+}
+.btn.success:focus,
+button.success:focus,
+.btn.success:hover,
+button.success:hover {
+  background-color: #25a25a;
+  background-image: -webkit-linear-gradient(top, #29b765, #25a25a);
+  background-image: linear-gradient(top, #29b765, #25a25a);
+  color: #ffffff;
+  border-color: #208e4e;
+  border-bottom-color: #1b7943;
+  box-shadow: 0 0 0 2px rgba(46, 204, 113, 0.5);
+}
+.btn.warning,
+button.warning {
+  background-color: #f39c12;
+  background-image: -webkit-linear-gradient(top, #e08e0b, #f39c12);
+  background-image: linear-gradient(top, #e08e0b, #f39c12);
+  color: #ffffff;
+}
+.btn.warning:focus,
+button.warning:focus,
+.btn.warning:hover,
+button.warning:hover {
+  background-color: #c87f0a;
+  background-image: -webkit-linear-gradient(top, #e08e0b, #c87f0a);
+  background-image: linear-gradient(top, #e08e0b, #c87f0a);
+  color: #ffffff;
+  border-color: #b06f09;
+  border-bottom-color: #976008;
+  box-shadow: 0 0 0 2px rgba(243, 156, 18, 0.5);
+}
+.btn.alert,
+button.alert {
+  background-color: #e74c3c;
+  background-image: -webkit-linear-gradient(top, #e43725, #e74c3c);
+  background-image: linear-gradient(top, #e43725, #e74c3c);
+  color: #ffffff;
+}
+.btn.alert:focus,
+button.alert:focus,
+.btn.alert:hover,
+button.alert:hover {
+  background-color: #d62c1a;
+  background-image: -webkit-linear-gradient(top, #e43725, #d62c1a);
+  background-image: linear-gradient(top, #e43725, #d62c1a);
+  color: #ffffff;
+  border-color: #bf2718;
+  border-bottom-color: #a82315;
+  box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.5);
+}
+.btn.link,
+button.link {
+  background-color: transparent;
+  background-image: none;
+}
+.btn.link.primary,
+button.link.primary {
+  color: #00a0dc;
+}
+.btn.link.success,
+button.link.success {
+  color: #2ecc71;
+}
+.btn.link.warning,
+button.link.warning {
+  color: #f39c12;
+}
+.btn.link.alert,
+button.link.alert {
+  color: #e74c3c;
+}
+.btn.link:focus,
+button.link:focus,
+.btn.link:hover,
+button.link:hover {
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-bottom-color: transparent;
+  box-shadow: none;
+  text-decoration: underline;
+}
+.btn.xlarge,
+button.xlarge {
+  font-size: 1.2rem;
+}
+.btn.large,
+button.large {
+  font-size: 1rem;
+}
+.btn.small,
+button.small {
+  font-size: .7rem;
+}
+.btn.xsmall,
+button.xsmall {
+  font-size: .5rem;
+}
+.btn.gdrive,
+button.gdrive {
+  background-color: #d14836;
+  background-image: -webkit-linear-gradient(top, #dd4b39, #d14836);
+  background-image: linear-gradient(top, #dd4b39, #d14836);
+  color: #ffffff;
+}
+.btn.gdrive:focus,
+button.gdrive:focus,
+.btn.gdrive:hover,
+button.gdrive:hover {
+  background-color: #c53727;
+  background-image: -webkit-linear-gradient(top, #dd4b39, #c53727);
+  background-image: linear-gradient(top, #dd4b39, #c53727);
+  border: 1px solid #b0281a;
+  border-bottom-color: #af301f;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.btn[disabled],
+button[disabled] {
+  cursor: not-allowed;
+  opacity: .25;
+  pointer-events: none;
+}
+
+/*!
+ * Copyright 2015 Achraf Chouk <achrafchouk@gmail.com>
+ * https://github.com/crewstyle/Urca/blob/master/src/less/05.forms.less ~ Urca v2.0.0
+ */
+textarea,
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  background-color: #ffffff;
+  border: 1px solid #bfcad5;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(39, 39, 39, 0.075);
+  color: #637e98;
+  display: inline-block;
+  font-size: .875rem;
+  height: 2.4285714286em;
+  line-height: 1.5714285714em;
+  outline: 0;
+  padding: .4285714286em .5714285714em;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-transition: border ease 0.5s, box-shadow ease 0.5s;
+  -moz-transition: border ease 0.5s, box-shadow ease 0.5s;
+  transition: border ease 0.5s, box-shadow ease 0.5s;
+}
+textarea:focus,
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus {
+  border-color: #728ba3;
+  border-bottom-color: #637e98;
+  box-shadow: 0 0 0 2px rgba(160, 177, 193, 0.5), inset 0 1px 2px rgba(160, 177, 193, 0.2);
+  color: #272727;
+  outline: 0;
+}
+input[type="range"] {
+  color: #3b4b5a;
+  display: inline-block;
+  font-size: .875rem;
+  height: 2.4285714286em;
+  line-height: 1.5714285714em;
+  outline: 0;
+  padding: .4285714286em .5714285714em;
+  width: 100%;
+}
+input[type="range"]:focus {
+  outline: 0;
+}
+select {
+  background-color: #ffffff;
+  border: 1px solid #a0b1c1;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 1px rgba(39, 39, 39, 0.075), inset 0 -1px 1px rgba(39, 39, 39, 0.075);
+  color: #3b4b5a;
+  font-size: .875rem;
+  height: 2.4285714286em;
+  line-height: 1.5714285714em;
+  outline: 0;
+  padding: .4285714286em .8571428571em;
+  width: 100%;
+  -webkit-transition: border ease .5s;
+  -moz-transition: border ease .5s;
+  transition: border ease .5s;
+}
+select[multiple] {
+  min-height: 4.2857142857em;
+  resize: vertical;
+}
+select:focus {
+  border-color: #637e98;
+  box-shadow: 0 0 0 2px rgba(160, 177, 193, 0.3), inset 0 1px 2px rgba(160, 177, 193, 0.2);
+  color: #272727;
+  outline: 0;
+}
+textarea {
+  min-height: 4.1428571429em;
+  resize: vertical;
+}
+textarea:focus {
+  border-color: #728ba3;
+  border-bottom-color: #637e98;
+  box-shadow: 0 0 0 2px rgba(160, 177, 193, 0.5), inset 0 1px 2px rgba(160, 177, 193, 0.2);
+  color: #272727;
+  outline: 0;
+}
+input[readonly],
+select[readonly],
+textarea[readonly] {
+  border-color: #a0b1c1;
+  box-shadow: 0 0 0 2px rgba(253, 253, 253, 0.4), inset 0 1px 2px rgba(39, 39, 39, 0.2);
+}
+input[disabled],
+select[disabled],
+textarea[disabled] {
+  background-color: #eff3f6;
+  border-color: #a0b1c1;
+  box-shadow: 0 0 0 2px rgba(253, 253, 253, 0.4), inset 0 1px 2px rgba(39, 39, 39, 0.2);
+  cursor: not-allowed;
+  opacity: .5;
+  pointer-events: none;
+}
+fieldset {
+  border: 1px solid rgba(39, 39, 39, 0.1);
+  border-radius: 2px;
+  display: block;
+  margin: 1.25em 0;
+  padding: 1.25em;
+}
+legend {
+  font-size: 85%;
+  font-weight: 700;
+  line-height: 0;
+  margin-left: -0.625em;
+  padding: 0 .625em;
+  text-transform: uppercase;
+}
+label {
+  display: block;
+}
+label small,
+label .small {
+  color: #a0b1c1;
+}
+form {
+  margin: 0;
+  padding: 0;
+}
+form .form-group {
+  margin: 0 0 .625em;
+}
+form .form-labels label {
+  display: inline-block;
+  margin: 0 .625em 0 0;
+}
+form .form-labels label.label-block {
+  display: block;
+  margin: 0;
+}
+form.form-inline label,
+form.form-inline input {
+  display: inline-block;
+  width: auto;
+}
+form.form-aligned {
+  /*Not yet: https://drafts.csswg.org/selectors/#relational
+        label:has(input) {
+        }*/
+}
+form.form-aligned .form-group,
+form.form-aligned .form-submit {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-self: flex-start;
+  align-self: flex-start;
+  -webkit-flex-basis: 100%;
+  -ms-flex-basis: 100%;
+  flex-basis: 100%;
+}
+form.form-aligned .form-submit {
+  margin-left: 20%;
+}
+form.form-aligned label {
+  padding: .375em .675em;
+  text-align: right;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-align-self: auto;
+  align-self: auto;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+form.form-aligned label.form-label {
+  margin-left: 20%;
+  padding: 0;
+  text-align: left;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+form.form-aligned label.form-label input {
+  display: inline-block;
+  width: auto;
+}
+form.form-aligned input,
+form.form-aligned select,
+form.form-aligned textarea {
+  text-align: left;
+  width: 80%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-align-self: auto;
+  align-self: auto;
+}
+form .form-big,
+form .form-big label small,
+form .form-big select,
+form .form-big textarea,
+form .form-big input,
+form .form-big button {
+  font-size: 120%;
+}
+form .form-small,
+form .form-small label small,
+form .form-small select,
+form .form-small textarea,
+form .form-small input,
+form .form-small button {
+  font-size: 80%;
+}
+.success label small {
+  color: #2ecc71;
+}
+.success select,
+.success textarea,
+.success input {
+  border-color: #2ecc71;
+  color: #2ecc71;
+}
+.success select:focus,
+.success textarea:focus,
+.success input:focus {
+  border-color: #208e4e;
+  border-bottom-color: #1b7943;
+  box-shadow: 0 0 0 2px rgba(46, 204, 113, 0.5), inset 0 1px 2px rgba(46, 204, 113, 0.2);
+  color: #2ecc71;
+}
+.warning label small {
+  color: #f39c12;
+}
+.warning select,
+.warning textarea,
+.warning input {
+  border-color: #f39c12;
+  color: #f39c12;
+}
+.warning select:focus,
+.warning textarea:focus,
+.warning input:focus {
+  border-color: #b06f09;
+  border-bottom-color: #976008;
+  box-shadow: 0 0 0 2px rgba(243, 156, 18, 0.5), inset 0 1px 2px rgba(243, 156, 18, 0.2);
+  color: #f39c12;
+}
+.error label small {
+  color: #e74c3c;
+}
+.error select,
+.error textarea,
+.error input {
+  border-color: #e74c3c;
+  color: #e74c3c;
+}
+.error select:focus,
+.error textarea:focus,
+.error input:focus {
+  border-color: #bf2718;
+  border-bottom-color: #a82315;
+  box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.5), inset 0 1px 2px rgba(231, 76, 60, 0.2);
+  color: #e74c3c;
+}
+/* New way, not yet ready because of negative adjascent selector
+.input-prepend,
+.input-append {
+    background-color: fade(@blackcolor, 7.5%);
+    border: 1px solid @mediumgraycolor;
+    color: darken(@mediumgraycolor, 40%);
+    display: inline-block;
+    font-size: 14px;
+    height: 34px;
+    line-height: 20px;
+    padding: 6px 8px;
+    vertical-align: top;
+}
+.input-prepend {
+    border-radius: 4px 0 0 4px;
+    margin-right: -5px;
+}
+.input-append {
+    border-radius: 0 4px 4px 0;
+    margin-left: -5px;
+}
+.input-prepend + select,
+.input-append ~ select,
+.input-prepend + textarea,
+.input-append ~ textarea,
+.input-prepend + input,
+.input-append ~ input {
+    width: auto;
+}
+.input-prepend + select,
+.input-prepend + textarea,
+.input-prepend + input {
+    border-radius: 0 4px 4px 0;
+}
+.input-append ~ select,
+.input-append ~ textarea,
+.input-append ~ input {
+    border-radius: 4px 0 0 4px;
+}*/
+.input-prepend .input-icon,
+.input-append .input-icon {
+  background-color: rgba(39, 39, 39, 0.075);
+  border: 1px solid #a0b1c1;
+  color: #3b4b5a;
+  display: inline-block;
+  font-size: .875rem;
+  height: 2.4285714286em;
+  line-height: 1.4285714286em;
+  padding: .4285714286em .8571428571em;
+  vertical-align: top;
+}
+.input-prepend select,
+.input-append select,
+.input-prepend textarea,
+.input-append textarea,
+.input-prepend input,
+.input-append input {
+  width: auto;
+}
+.input-prepend .input-icon {
+  border-radius: 4px 0 0 4px;
+  margin-right: -0.35714286em;
+}
+.input-prepend select,
+.input-prepend textarea,
+.input-prepend input {
+  border-radius: 0 4px 4px 0;
+}
+.input-append .input-icon {
+  border-radius: 0 4px 4px 0;
+  margin-left: -0.35714286em;
+}
+.input-append select,
+.input-append textarea,
+.input-append input {
+  border-radius: 4px 0 0 4px;
+}
+
+/*!
+ * Copyright 2015 Achraf Chouk <achrafchouk@gmail.com>
+ * https://github.com/crewstyle/Urca/blob/master/src/less/06.tables.less ~ Urca v2.0.0
+ */
+table {
+  empty-cells: show;
+  margin-bottom: 20px;
+  max-width: 100%;
+  width: 100%;
+}
+table caption {
+  color: #272727;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 0;
+  text-transform: uppercase;
+}
+table th,
+table td {
+  border-bottom: 1px solid rgba(39, 39, 39, 0.04);
+  padding: 10px;
+  text-align: left;
+}
+table th {
+  background-color: #eff3f6;
+  font-weight: 700;
+}
+table tfoot th,
+table tfoot td {
+  color: rgba(39, 39, 39, 0.5);
+}
+table.bordered {
+  margin-top: -1px;
+}
+table.bordered caption {
+  padding-left: 16px;
+}
+table.bordered td,
+table.bordered th {
+  border: 1px solid rgba(39, 39, 39, 0.03);
+}
+table.stripped tbody tr:nth-child(odd) td {
+  background-color: #e5ecf0;
 }

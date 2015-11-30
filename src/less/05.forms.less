@@ -1,0 +1,441 @@
+/*!
+ * Copyright 2015 Achraf Chouk <achrafchouk@gmail.com>
+ * https://github.com/crewstyle/Urca/blob/master/src/less/05.forms.less ~ Urca v2.0.0
+ */
+
+
+//-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› INPUTS
+textarea,
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+    background-color: @whitecolor;
+    border: 1px solid lighten(@mediumgraycolor, 10%);
+    border-radius: 2px;
+    box-shadow: inset 0 1px 1px fade(@blackcolor, 7.5%);
+    color: darken(@mediumgraycolor, 20%);
+    display: inline-block;
+    font-size: .875rem; //14px
+    height: 2.4285714286em; //34px
+    line-height: 1.5714285714em; //22px
+    outline: 0;
+    padding: .4285714286em .5714285714em; //6px 8px
+    width: 100%;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    -webkit-transition: border ease .5s, box-shadow ease .5s;
+    -moz-transition: border ease .5s, box-shadow ease .5s;
+    transition: border ease .5s, box-shadow ease .5s;
+
+    &:focus {
+        border-color: darken(@mediumgraycolor, 15%);
+        border-bottom-color: darken(@mediumgraycolor, 20%);
+        box-shadow: 0 0 0 2px fade(@mediumgraycolor, 50%), inset 0 1px 2px fade(@mediumgraycolor, 20%);
+        color: @blackcolor;
+        outline: 0;
+    }
+}
+
+
+//-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› RANGE
+input[type="range"] {
+    color: darken(@mediumgraycolor, 40%);
+    display: inline-block;
+    font-size: .875rem; //14px
+    height: 2.4285714286em; //34px
+    line-height: 1.5714285714em; //22px
+    outline: 0;
+    padding: .4285714286em .5714285714em; //6px 8px
+    width: 100%;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+
+//-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› SELECT
+select {
+    background-color: @whitecolor;
+    border: 1px solid @mediumgraycolor;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 1px fade(@blackcolor, 7.5%), inset 0 -1px 1px fade(@blackcolor, 7.5%);
+    color: darken(@mediumgraycolor, 40%);
+    font-size: .875rem; //14px
+    height: 2.4285714286em; //34px
+    line-height: 1.5714285714em; //22px
+    outline: 0;
+    padding: .4285714286em .8571428571em; //6px 12px
+    width: 100%;
+
+    -webkit-transition: border ease .5s;
+    -moz-transition: border ease .5s;
+    transition: border ease .5s;
+
+    &[multiple] {
+        min-height: 4.2857142857em; //60px
+        resize: vertical;
+    }
+
+    &:focus {
+        border-color: darken(@mediumgraycolor, 20%);
+        box-shadow: 0 0 0 2px fade(@mediumgraycolor, 30%), inset 0 1px 2px fade(@mediumgraycolor, 20%);
+        color: @blackcolor;
+        outline: 0;
+    }
+}
+
+
+//-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› TEXTAREA
+textarea {
+    min-height: 4.1428571429em;
+    resize: vertical;
+
+    &:focus {
+        border-color: darken(@mediumgraycolor, 15%);
+        border-bottom-color: darken(@mediumgraycolor, 20%);
+        box-shadow: 0 0 0 2px fade(@mediumgraycolor, 50%), inset 0 1px 2px fade(@mediumgraycolor, 20%);
+        color: @blackcolor;
+        outline: 0;
+    }
+}
+
+
+//-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› READ ONLY & DISABLED
+input[readonly], select[readonly], textarea[readonly] {
+    border-color: @mediumgraycolor;
+    box-shadow: 0 0 0 2px fade(lighten(@mediumgraycolor, 30%), 40%), inset 0 1px 2px fade(@blackcolor, 20%);
+}
+input[disabled], select[disabled], textarea[disabled] {
+    background-color: @lightgraycolor;
+    border-color: @mediumgraycolor;
+    box-shadow: 0 0 0 2px fade(lighten(@mediumgraycolor, 30%), 40%), inset 0 1px 2px fade(@blackcolor, 20%);
+    cursor: not-allowed;
+    opacity: .5;
+    pointer-events: none;
+}
+
+
+//-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› FIELDSET
+fieldset {
+    border: 1px solid fade(@blackcolor, 10%);
+    border-radius: 2px;
+    display: block;
+    margin: 1.25em 0; //20px
+    padding: 1.25em; //20px
+}
+
+
+//-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› LEGEND
+legend {
+    font-size: 85%;
+    font-weight: 700;
+    line-height: 0;
+    margin-left: -.625em; //10px
+    padding: 0 .625em; //10px
+    text-transform: uppercase;
+}
+
+
+//-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› LABEL
+label {
+    display: block;
+
+    small,
+    .small {
+        color: @mediumgraycolor;
+    }
+}
+
+
+//-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› FORM
+form {
+    margin: 0;
+    padding: 0;
+
+    .form-group {
+        margin: 0 0 .625em; //10px
+    }
+
+    .form-labels {
+        label {
+            display: inline-block;
+            margin: 0 .625em 0 0; //10px
+
+            &.label-block {
+                display: block;
+                margin: 0;
+            }
+        }
+    }
+
+
+    //-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› FORM-INLINE
+    &.form-inline {
+        label,
+        input {
+            display: inline-block;
+            width: auto;
+        }
+    }
+
+
+    //-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› FORM-STACKED
+    &.form-stacked {
+    }
+
+
+    //-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› FORM-ALIGNED
+    &.form-aligned {
+        .form-group,
+        .form-submit {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+
+            -webkit-align-self: flex-start;
+            align-self: flex-start;
+
+            -webkit-flex-basis: 100%;
+            -ms-flex-basis: 100%;
+            flex-basis: 100%;
+        }
+
+        .form-submit {
+            margin-left: 20%;
+        }
+
+        label {
+            padding: .375em .675em; //6px 10px
+            text-align: right;
+
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+            -webkit-align-self: auto;
+            align-self: auto;
+
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+
+            &.form-label {
+                margin-left: 20%;
+                padding: 0;
+                text-align: left;
+
+                -webkit-flex: none;
+                -ms-flex: none;
+                flex: none;
+
+                input {
+                    display: inline-block;
+                    width: auto;
+                }
+            }
+        }
+
+        /*Not yet: https://drafts.csswg.org/selectors/#relational
+        label:has(input) {
+        }*/
+
+        input, select, textarea {
+            text-align: left;
+            width: 80%;
+
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+            -webkit-align-self: auto;
+            align-self: auto;
+        }
+    }
+
+
+    //-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› SIZES
+    .form-big,
+    .form-big label small,
+    .form-big select,
+    .form-big textarea,
+    .form-big input,
+    .form-big button {
+        font-size: 120%;
+    }
+
+    .form-small,
+    .form-small label small,
+    .form-small select,
+    .form-small textarea,
+    .form-small input,
+    .form-small button {
+        font-size: 80%;
+    }
+}
+
+
+//-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› STATUSES
+.success {
+    label small {
+        color: @successcolor;
+    }
+
+    select,
+    textarea,
+    input {
+        border-color: @successcolor;
+        color: @successcolor;
+
+        &:focus {
+            border-color: darken(@successcolor, 15%);
+            border-bottom-color: darken(@successcolor, 20%);
+            box-shadow: 0 0 0 2px fade(@successcolor, 50%), inset 0 1px 2px fade(@successcolor, 20%);
+            color: @successcolor;
+        }
+    }
+}
+.warning {
+    label small {
+        color: @warningcolor;
+    }
+
+    select,
+    textarea,
+    input {
+        border-color: @warningcolor;
+        color: @warningcolor;
+
+        &:focus {
+            border-color: darken(@warningcolor, 15%);
+            border-bottom-color: darken(@warningcolor, 20%);
+            box-shadow: 0 0 0 2px fade(@warningcolor, 50%), inset 0 1px 2px fade(@warningcolor, 20%);
+            color: @warningcolor;
+        }
+    }
+}
+.error {
+    label small {
+        color: @alertcolor;
+    }
+
+    select,
+    textarea,
+    input {
+        border-color: @alertcolor;
+        color: @alertcolor;
+
+        &:focus {
+            border-color: darken(@alertcolor, 15%);
+            border-bottom-color: darken(@alertcolor, 20%);
+            box-shadow: 0 0 0 2px fade(@alertcolor, 50%), inset 0 1px 2px fade(@alertcolor, 20%);
+            color: @alertcolor;
+        }
+    }
+}
+
+
+//-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› APPEND AND PREPEND
+/* New way, not yet ready because of negative adjascent selector
+.input-prepend,
+.input-append {
+    background-color: fade(@blackcolor, 7.5%);
+    border: 1px solid @mediumgraycolor;
+    color: darken(@mediumgraycolor, 40%);
+    display: inline-block;
+    font-size: 14px;
+    height: 34px;
+    line-height: 20px;
+    padding: 6px 8px;
+    vertical-align: top;
+}
+.input-prepend {
+    border-radius: 4px 0 0 4px;
+    margin-right: -5px;
+}
+.input-append {
+    border-radius: 0 4px 4px 0;
+    margin-left: -5px;
+}
+.input-prepend + select,
+.input-append ~ select,
+.input-prepend + textarea,
+.input-append ~ textarea,
+.input-prepend + input,
+.input-append ~ input {
+    width: auto;
+}
+.input-prepend + select,
+.input-prepend + textarea,
+.input-prepend + input {
+    border-radius: 0 4px 4px 0;
+}
+.input-append ~ select,
+.input-append ~ textarea,
+.input-append ~ input {
+    border-radius: 4px 0 0 4px;
+}*/
+.input-prepend,
+.input-append {
+    .input-icon {
+        background-color: fade(@blackcolor, 7.5%);
+        border: 1px solid @mediumgraycolor;
+        color: darken(@mediumgraycolor, 40%);
+        display: inline-block;
+        font-size: .875rem; //14px
+        height: 2.4285714286em; //34px
+        line-height: 1.4285714286em; //20px
+        padding: .4285714286em .8571428571em; //6px 12px
+        vertical-align: top;
+    }
+
+    select,
+    textarea,
+    input {
+        width: auto;
+    }
+}
+.input-prepend {
+    .input-icon {
+        border-radius: 4px 0 0 4px;
+        margin-right: -.3571428571em; //-5px
+    }
+
+    select,
+    textarea,
+    input {
+        border-radius: 0 4px 4px 0;
+    }
+}
+.input-append {
+    .input-icon {
+        border-radius: 0 4px 4px 0;
+        margin-left: -.3571428571em; //-5px
+    }
+
+    select,
+    textarea,
+    input {
+        border-radius: 4px 0 0 4px;
+    }
+}

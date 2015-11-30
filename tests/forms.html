@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Urca Forms</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="prism/prism.css" />
+    <link rel="stylesheet" href="../dist/urca.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="container small">
+        <header>
+            <h1>Urca &rsaquo; Forms</h1>
+            <p>Forms have always been tricky.</p>
+        </header>
+
+        <!-- forms -->
+        <section>
+            <h2>Getting started</h2>
+
+            <p>Creating a form with <strong>Urca</strong> is designed to be easy but extremely flexible. Forms are built with a combination of standard form elements, as well as grid rows and columns.</p>
+
+            <form method="post" action="" autocomplete="off">
+                <fieldset>
+                    <legend>A simple example</legend>
+                    <label>Input text</label>
+                    <input type="text" placeholder="Text" />
+                </fieldset>
+            </form>
+
+            <pre><code class="language-markup">
+&lt;form method="post" action="" autocomplete="off"&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;A simple example&lt;/legend&gt;
+        &lt;label&gt;Input text&lt;/label&gt;
+        &lt;input type="text" placeholder="Text" /&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+            </code></pre>
+        </section>
+
+        <!-- group and labels -->
+        <section>
+            <h2>Group and labels</h2>
+
+            <p>Working with forms is quite simple. If you need some more display options, you can use <code>.form-group</code> and <code>.form-labels</code> CSS classes to make your display even better.</p>
+
+            <form method="post" action="" autocomplete="off">
+                <fieldset>
+                    <legend>Examples</legend>
+
+                    <div class="form-group">
+                        <label>Input text in a <code>.form-group</code></label>
+                        <input type="text" placeholder="Text" />
+                    </div>
+
+                    <div class="form-labels">
+                        <label class="label-block">Checkboxes in a <code>.form-labels</code></label>
+                        <label><input type="checkbox" /> Checkbox #1</label>
+                        <label><input type="checkbox" /> Checkbox #2</label>
+                        <label><input type="checkbox" /> Checkbox #3</label>
+                    </div>
+                </fieldset>
+            </form>
+
+            <pre><code class="language-markup">
+&lt;form method="post" action="" autocomplete="off"&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Examples&lt;/legend&gt;
+
+        &lt;div class="form-group"&gt;
+            &lt;label&gt;Input text&lt;/label&gt;
+            &lt;input type="text" placeholder="Text" /&gt;
+        &lt;/div&gt;
+
+        &lt;div class="form-labels"&gt;
+            &lt;label class="label-block"&gt;Checkboxes in a &lt;code&gt;.form-labels&lt;/code&gt;&lt;/label&gt;
+            &lt;label&gt;&lt;input type="checkbox" /&gt; Checkbox #1&lt;/label&gt;
+            &lt;label&gt;&lt;input type="checkbox" /&gt; Checkbox #2&lt;/label&gt;
+            &lt;label&gt;&lt;input type="checkbox" /&gt; Checkbox #3&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+            </code></pre>
+        </section>
+
+        <!-- options -->
+        <section>
+            <h2>Options</h2>
+
+            <h3 class="serif">Form inline</h3>
+
+            <form method="post" action="" autocomplete="off" class="form-inline">
+                <fieldset>
+                    <legend>Please, sign in!</legend>
+
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <label for="remember1"><input type="checkbox" id="remember1" /> Remember me</label>
+
+                    <button type="submit" class="btn primary">Sign in</button>
+                </fieldset>
+            </form>
+
+            <pre><code class="language-markup">
+&lt;form method="post" action="" autocomplete="off" class="form-inline"&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Please, sign in!&lt;/legend&gt;
+
+        &lt;input type="email" placeholder="Email" /&gt;
+        &lt;input type="password" placeholder="Password" /&gt;
+        &lt;label for="remember"&gt;&lt;input type="checkbox" id="remember" /&gt; Remember me&lt;/label&gt;
+
+        &lt;button type="submit" class="btn primary"&gt;Sign in&lt;/button&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+            </code></pre>
+
+            <h3 class="serif">Form stacked</h3>
+
+            <p>To create a stacked form, add the <code>form-stacked</code> classname to a <code>&lt;form&gt;</code> element.</p>
+
+            <form method="post" action="" autocomplete="off" class="form-stacked">
+                <fieldset>
+                    <legend>Please, sign in!</legend>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Email" />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="Password" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="remember2" class="form-label"><input type="checkbox" id="remember2" /> Remember me</label>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="btn primary">Sign in</button>
+                        <button type="reset" class="btn link">Cancel</button>
+                    </div>
+                </fieldset>
+            </form>
+
+            <pre><code class="language-markup">
+&lt;form method="post" action="" autocomplete="off" class="form-stacked"&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Please, sign in!&lt;/legend&gt;
+
+        &lt;div class="form-group"&gt;
+            &lt;label&gt;Email&lt;/label&gt;
+            &lt;input type="email" placeholder="Email" /&gt;
+        &lt;/div&gt;
+
+        &lt;div class="form-group"&gt;
+            &lt;label&gt;Password&lt;/label&gt;
+            &lt;input type="password" placeholder="Password" /&gt;
+        &lt;/div&gt;
+
+        &lt;div class="form-group"&gt;
+            &lt;label for="remember" class="form-label"&gt;&lt;input type="checkbox" id="remember" /&gt; Remember me&lt;/label&gt;
+        &lt;/div&gt;
+
+        &lt;div class="form-submit"&gt;
+            &lt;button type="submit" class="btn primary"&gt;Sign in&lt;/button&gt;
+            &lt;button type="reset" class="btn link"&gt;Cancel&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+            </code></pre>
+
+            <h3 class="serif">Form aligned</h3>
+
+            <p>To create an aligned form, add the <code>form-aligned</code> classname to a <code>&lt;form&gt;</code> element instead of <code>form-stacked</code> classname. In an aligned form, the labels are right-aligned against the form input controls.</p>
+
+            <form method="post" action="" autocomplete="off" class="form-aligned">
+                <fieldset>
+                    <legend>Please, sign in!</legend>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Email" />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="Password" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="remember3" class="form-label"><input type="checkbox" id="remember3" /> Remember me</label>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="btn primary">Sign in</button>
+                        <button type="reset" class="btn link">Cancel</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+        <section>
+            <h2>Fields</h2>
+
+            <h3 class="serif">Text inputs</h3>
+
+            <p>These input types create a text field: <code>color</code>, <code>date</code>, <code>datetime</code>, <code>datetime-local</code>, <code>email</code>, <code>month</code>, <code>password</code>, <code>search</code>, <code>tel</code>, <code>text</code>, <code>time</code>, <code>url</code> and <code>week</code>.</p>
+
+            <form method="post" action="" autocomplete="off">
+                <fieldset>
+                    <legend>A simple example</legend>
+
+                    <label>Date</label>
+                    <input type="date" />
+
+                    <label>Password</label>
+                    <input type="password" placeholder="Your password here" value="password" />
+
+                    <label>Url</label>
+                    <input type="url" />
+                </fieldset>
+            </form>
+
+            <pre><code class="language-markup">
+&lt;label&gt;Password&lt;/label&gt;
+&lt;input type="password" placeholder="Your password here" value="password" /&gt;
+            </code></pre>
+
+            <h3 class="serif">Numbers</h3>
+
+            <p>These input types create a text field: <code>number</code> and <code>range</code>.</p>
+
+            <form method="post" action="" autocomplete="off">
+                <fieldset>
+                    <legend>A simple example</legend>
+
+                    <label>Number</label>
+                    <input type="number" placeholder="7" />
+
+                    <label>Range</label>
+                    <input type="range" placeholder="7" />
+                </fieldset>
+            </form>
+
+            <h3 class="serif">Textareas</h3>
+
+            <p>These input types create a text field: <code>textarea</code>.</p>
+
+            <form method="post" action="" autocomplete="off">
+                <fieldset>
+                    <legend>A simple example</legend>
+
+                    <label>Textarea</label>
+                    <textarea placeholder="7"></textarea>
+                </fieldset>
+            </form>
+
+            <pre><code class="language-markup">
+&lt;label&gt;Textarea&lt;/label&gt;
+&lt;textarea placeholder="7"&gt;&lt;/textarea&gt;
+            </code></pre>
+
+            <h3 class="serif">Selects</h3>
+
+            <p>These input types create a text field: <code>select</code>.</p>
+
+            <form method="post" action="" autocomplete="off">
+                <fieldset>
+                    <legend>A simple example</legend>
+
+                    <label>Select</label>
+                    <select>
+                        <option value="">Option 1</option>
+                        <option value="">Option 2</option>
+                        <option value="">Option 3</option>
+                    </select>
+
+                    <label>Multi select</label>
+                    <select multiple="multiple">
+                        <option value="">Option 1</option>
+                        <option value="">Option 2</option>
+                        <option value="">Option 3</option>
+                    </select>
+                </fieldset>
+            </form>
+
+            <pre><code class="language-markup">
+&lt;label&gt;Select&lt;/label&gt;
+&lt;select&gt;
+    &lt;option value=""&gt;Option 1&lt;/option&gt;
+    &lt;option value=""&gt;Option 2&lt;/option&gt;
+    &lt;option value=""&gt;Option 3&lt;/option&gt;
+&lt;/select&gt;
+            </code></pre>
+
+            <h3 class="serif">Checkboxes and radios</h3>
+
+            <p>These input types create a text field: <code>checkbox</code> and <code>radio</code>.</p>
+
+            <form method="post" action="" autocomplete="off">
+                <fieldset>
+                    <legend>A simple example</legend>
+
+                    <label>
+                        <input type="checkbox" /> Checkbox
+                    </label>
+                    <label>
+                        <input type="radio" /> Radio
+                    </label>
+                </fieldset>
+            </form>
+
+            <pre><code class="language-markup">
+&lt;label&gt;
+    &lt;input type="checkbox" /&gt; Checkbox
+&lt;/label&gt;
+&lt;label&gt;
+    &lt;input type="radio" /&gt; Radio
+&lt;/label&gt;
+            </code></pre>
+
+            <h3 class="serif">Buttons</h3>
+
+            <p>Buttons are fully described <a href="buttons.html">here</a>.</p>
+
+            <form method="post" action="" autocomplete="off" class="row" style="text-align:center">
+                <fieldset class="col">
+                    <legend>A simple example</legend>
+
+                    <button type="submit" class="btn primary">Sign in</button>
+                    <button type="reset">Cancel</button>
+                </fieldset>
+
+                <fieldset class="col one" style="border:none">
+                    or
+                </fieldset>
+
+                <fieldset class="col">
+                    <legend>An other one</legend>
+
+                    <button type="submit" class="btn primary">Sign in</button>
+                    <button type="reset" class="btn link">Cancel</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section>
+            <h2>Disabled</h2>
+
+            <form method="post" action="" autocomplete="off">
+                <fieldset>
+                    <div class="form-group">
+                        <input type="text" value="Text value" disabled />
+                        <select disabled>
+                            <option value="">Option 1</option>
+                            <option value="">Option 2</option>
+                            <option value="">Option 3</option>
+                        </select>
+                        <select multiple="multiple" disabled>
+                            <option value="">Option 1</option>
+                            <option value="">Option 2</option>
+                            <option value="">Option 3</option>
+                        </select>
+                        <textarea disabled>Textarea content</textarea>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="btn primary" disabled>Sign in</button>
+                        <button type="reset" class="btn link" disabled>Cancel</button>
+                    </div>
+                </fieldset>
+            </form>
+
+            <pre><code class="language-markup">
+&lt;input type="text" value="Text value" disabled /&gt;
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Descriptions</h2>
+
+            <form method="post" action="" autocomplete="off">
+                <fieldset>
+                    <div class="form-group">
+                        <label>Password <small>This field is required</small></label>
+                        <input type="password" placeholder="Password" />
+                        <p class="form-description">This field must contain at least 8 characters, with 1 number, 1 letter and 1 sign.</p>
+                    </div>
+                </fieldset>
+            </form>
+
+            <pre><code class="language-markup">
+&lt;form method="post" action="" autocomplete="off"&gt;
+    &lt;fieldset&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label&gt;Password &lt;small&gt;This field is required&lt;/small&gt;&lt;/label&gt;
+            &lt;input type="password" placeholder="Password" /&gt;
+            &lt;p class="form-description"&gt;This field must contain at least 8 characters, with 1 number, 1 letter and 1 sign.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Statuses</h2>
+
+            <form method="post" action="" autocomplete="off">
+                <fieldset>
+                    <div class="form-group error">
+                        <label>Email <small>This field is required</small></label>
+                        <input type="email" placeholder="Your email here" />
+                        <p class="form-description">Insert your email address here to be notified.</p>
+                    </div>
+
+                    <div class="form-group warning">
+                        <label>Email <small>This field is required</small></label>
+                        <input type="email" placeholder="Your email here" />
+                        <p class="form-description">Insert your email address here to be notified.</p>
+                    </div>
+
+                    <div class="form-group success">
+                        <label>Email <small>This field is required</small></label>
+                        <input type="email" placeholder="Your email here" />
+                        <p class="form-description">Insert your email address here to be notified.</p>
+                    </div>
+                </fieldset>
+            </form>
+
+            <pre><code class="language-markup">
+&lt;form method="post" action="" autocomplete="off"&gt;
+    &lt;fieldset&gt;
+        &lt;div class="form-group error"&gt;
+            &lt;label&gt;Email &lt;small&gt;This field is required&lt;/small&gt;&lt;/label&gt;
+            &lt;input type="email" placeholder="Your email here" /&gt;
+            &lt;p class="form-description"&gt;Insert your email address here to be notified.&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class="form-group warning"&gt;
+            &lt;label&gt;Email &lt;small&gt;This field is required&lt;/small&gt;&lt;/label&gt;
+            &lt;input type="email" placeholder="Your email here" /&gt;
+            &lt;p class="form-description"&gt;Insert your email address here to be notified.&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class="form-group success"&gt;
+            &lt;label&gt;Email &lt;small&gt;This field is required&lt;/small&gt;&lt;/label&gt;
+            &lt;input type="email" placeholder="Your email here" /&gt;
+            &lt;p class="form-description"&gt;Insert your email address here to be notified.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Sizes</h2>
+
+            <form method="post" action="" autocomplete="off">
+                <fieldset>
+                    <div class="form-group form-big">
+                        <label>Text</label>
+                        <input type="text" placeholder="Your text here" />
+                        <button>Submit</button>
+                    </div>
+
+                    <div class="form-group form-small">
+                        <label>Text</label>
+                        <input type="text" placeholder="Your text here" />
+                        <button>Submit</button>
+                    </div>
+                </fieldset>
+            </form>
+
+            <pre><code class="language-markup">
+&lt;form method="post" action="" autocomplete="off"&gt;
+    &lt;fieldset&gt;
+        &lt;div class="form-group form-big"&gt;
+            &lt;label&gt;Text&lt;/label&gt;
+            &lt;input type="text" placeholder="Your text here" /&gt;
+            &lt;button&gt;Submit&lt;/button&gt;
+        &lt;/div&gt;
+
+        &lt;div class="form-group form-small"&gt;
+            &lt;label&gt;Text&lt;/label&gt;
+            &lt;input type="text" placeholder="Your text here" /&gt;
+            &lt;button&gt;Submit&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Append &amp; prepend</h2>
+
+            <form method="post" action="" autocomplete="off">
+                <fieldset>
+                    <div class="form-group input-prepend">
+                        <label>Text</label>
+                        <span class="input-icon"><i class="fa fa-hand-spock-o"></i></span>
+                        <input type="text" placeholder="Your text here" />
+                    </div>
+
+                    <div class="form-group input-append">
+                        <label>Text</label>
+                        <input type="text" placeholder="Your text here" />
+                        <span class="input-icon"><i class="fa fa-hand-peace-o"></i></span>
+                    </div>
+
+                    <div class="form-group input-append">
+                        <label>Search</label>
+                        <input type="text" placeholder="Type your search here" />
+                        <button type="submit" class="btn primary input-icon"><i class="fa fa-hand-scissors-o"></i></button>
+                    </div>
+
+                    <div class="form-group input-append">
+                        <label>No no no</label>
+                        <input type="text" placeholder="Type your search here" />
+                        <button type="submit" class="btn alert input-icon">Do NOT click here</button>
+                    </div>
+                </fieldset>
+            </form>
+
+            <pre><code class="language-markup">
+&lt;form method="post" action="" autocomplete="off"&gt;
+    &lt;fieldset&gt;
+        &lt;div class="form-group input-prepend"&gt;
+            &lt;label&gt;Text&lt;/label&gt;
+            &lt;span class="input-icon"&gt;&lt;i class="fa fa-hand-spock-o"&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;input type="text" placeholder="Your text here" /&gt;
+        &lt;/div&gt;
+
+        &lt;div class="form-group input-append"&gt;
+            &lt;label&gt;Text&lt;/label&gt;
+            &lt;input type="text" placeholder="Your text here" /&gt;
+            &lt;span class="input-icon"&gt;&lt;i class="fa fa-hand-peace-o"&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>More examples</h2>
+
+            <form method="post" action="" autocomplete="off" class="form-inline">
+                <fieldset>
+                    <legend>Phone number</legend>
+
+                    ( <input type="text" name="phone-prefix" size="3" class="width-6" /> )
+                    <input type="text" name="phone-number-1" size="4" />
+                    -
+                    <input type="text" name="phone-number-2" size="4" />
+                    &nbsp;ext: <input type="text" name="phone-ext" size="3" />
+                </fieldset>
+            </form>
+        </section>
+
+        <footer>
+            <p>Made with ♥ by <a href="https://github.com/crewstyle">Achraf Chouk</a> - <a href="demo.html">All demonstrations</a></p>
+        </footer>
+    </div>
+
+    <script src="prism/prism.js"></script>
+    <script src="prism/remove.js"></script>
+</body>
+</html>

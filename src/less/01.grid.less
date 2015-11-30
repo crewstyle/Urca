@@ -1,14 +1,42 @@
 /*!
- * Urca Gryd v2.0.0 - "Banane ou crocodile, c'est quoi la différence ? Les deux se mangent, non ? - One Piece"
  * Copyright 2015 Achraf Chouk <achrafchouk@gmail.com>
- *
- * https://github.com/crewstyle/Urca/blob/master/src/less/gryd.less
+ * https://github.com/crewstyle/Urca/blob/master/src/less/01.grid.less ~ Urca v2.0.0
  */
 
 
-@columnWidth: (100% / 12);
-@gutterWidth: 2%;
+//variables
+@extraSmallWidth: @highextrasmall;
+@smallWidth: @highsmall;
+@mediumWidth: @highmedium;
+@largeWidth: @highlarge;
+@extraLargeWidth: @highextralarge;
 
+
+//media queries
+@extraSmallScreenOnly: ~"only screen and (min-width: @{highextrasmall}) and (max-width: @{lowsmall})";
+@smallScreen: ~"only screen and (min-width: @{highsmall})";
+@smallScreenOnly: ~"only screen and (min-width: @{highsmall}) and (max-width: @{lowmedium})";
+@mediumScreen: ~"only screen and (min-width: @{highmedium})";
+@mediumScreenOnly: ~"only screen and (min-width: @{highmedium}) and (max-width: @{lowlarge})";
+@largeScreen: ~"only screen and (min-width: @{highlarge})";
+@largeScreenOnly: ~"only screen and (min-width: @{highlarge}) and (max-width: @{lowextralarge})";
+@extraLargeScreen: ~"only screen and (min-width: @{highextralarge})";
+
+
+//-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› CONTAINER
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+    width: auto;
+
+    &.small {
+        max-width: 768px;
+    }
+}
+
+
+//-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› ROWS
 .row, .rows {
     list-style: none;
     margin-bottom: 0;
@@ -16,6 +44,7 @@
     margin-right: -(@gutterWidth / 2);
     margin-top: 0;
     padding: 0;
+    width: auto;
 
     display: -webkit-box;
     display: -moz-box;
@@ -26,12 +55,13 @@
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+
     -webkit-flex-basis: 100%;
     -ms-flex-basis: 100%;
     flex-basis: 100%;
 
 
-    //-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› ROWS
+    //-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› SUB ROWS
 
     .row, .rows {
         margin-left: 0;
@@ -54,6 +84,7 @@
 
         -webkit-align-self: auto;
         align-self: auto;
+
         -webkit-flex: 1;
         -ms-flex: 1;
         flex: 1;
@@ -245,8 +276,8 @@
 
     //-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› COLUMNS & OPTIONS
 
-    //-› nested rows
-    &.nested {
+    //-› rows without gutter
+    &.no-gutter {
         .col, .cols {
             margin-left: 0;
             margin-right: 0;
@@ -312,5 +343,83 @@
             -ms-flex: none;
             flex: none;
         }
+    }
+}
+
+
+//-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› EXTRA SMALL SCREEN ONLY
+@media @extraSmallScreenOnly {
+    //hidding elements
+    .hidden-extra-small {
+        display: none;
+    }
+}
+
+
+//-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› SMALL SCREEN
+@media @smallScreen {
+    .row, .rows {
+        max-width: @smallWidth;
+    }
+}
+
+
+//-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› SMALL SCREEN ONLY
+@media @smallScreenOnly {
+    //hidding elements
+    .hidden-small {
+        display: none;
+    }
+}
+
+
+//-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› MEDIUM SCREEN
+@media @mediumScreen {
+    @columnWidth: (100% / 12);
+
+    //rows
+    .row, .rows {
+        max-width: @mediumWidth;
+    }
+}
+
+
+//-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› MEDIUM SCREEN ONLY
+@media @mediumScreenOnly {
+    //hidding elements
+    .hidden-medium {
+        display: none;
+    }
+}
+
+
+//-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› LARGE SCREEN
+@media @largeScreen {
+    //rows
+    .row, .rows {
+        max-width: @largeWidth;
+    }
+}
+
+
+//-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› LARGE SCREEN ONLY
+@media @largeScreenOnly {
+    //hidding elements
+    .hidden-large {
+        display: none;
+    }
+}
+
+
+//-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› EXTRA LARGE SCREEN
+@media @extraLargeScreen {
+    //hidding elements
+    .hidden-extra-large {
+        display: none;
+    }
+
+    //rows
+    .row, .rows {
+        max-width: @extraLargeWidth;
     }
 }

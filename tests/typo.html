@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Urca Typography</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="prism/prism.css" />
+    <link rel="stylesheet" href="../dist/urca.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="container small">
+        <header>
+            <h1>Urca &rsaquo; Typography</h1>
+        </header>
+
+        <!-- typography -->
+        <section>
+            <h2>Getting started</h2>
+
+            <h3 class="serif">Titles</h3>
+
+            <h1>h1. This is a very large header. <small>Small subheader</small></h1>
+            <h2>h2. This is a large header. <small>Small subheader</small></h2>
+            <h3>h3. This is a medium header. <small>Small subheader</small></h3>
+            <h4>h4. This is a moderate header. <small>Small subheader</small></h4>
+            <h5>h5. This is a small header. <small>Small subheader</small></h5>
+            <h6>h6. This is a tiny header. <small>Small subheader</small></h6>
+
+            <pre><code class="language-markup">
+&lt;h1&gt;h1. This is a very large header. &lt;small&gt;Small subheader&lt;/small&gt;&lt;/h1&gt;
+&lt;h2&gt;h2. This is a large header. &lt;small&gt;Small subheader&lt;/small&gt;&lt;/h2&gt;
+&lt;h3&gt;h3. This is a medium header. &lt;small&gt;Small subheader&lt;/small&gt;&lt;/h3&gt;
+&lt;h4&gt;h4. This is a moderate header. &lt;small&gt;Small subheader&lt;/small&gt;&lt;/h4&gt;
+&lt;h5&gt;h5. This is a small header. &lt;small&gt;Small subheader&lt;/small&gt;&lt;/h5&gt;
+&lt;h6&gt;h6. This is a tiny header. &lt;small&gt;Small subheader&lt;/small&gt;&lt;/h6&gt;
+            </code></pre>
+
+            <hr/>
+
+            <h3 class="serif">Links</h3>
+
+            <p>Here is a <a href="#link">Normal link</a>, with all its statuses:</p>
+            <ul>
+                <li><a href="#" style="color:#00a0dc;">Link</a></li>
+                <li><a href="#" style="color:#005676; text-decoration:underline;">Hover and focus</a></li>
+                <li><a href="#" style="color:#00435d; text-decoration:underline;">Visited</a></li>
+            </ul>
+
+            <pre><code class="language-markup">
+&lt;a href="#"&gt;Normal link&lt;/a&gt;
+            </code></pre>
+
+            <hr/>
+
+            <h3 class="serif">Divider</h3>
+
+            <hr style="opacity:1"/>
+
+            <pre><code class="language-markup">
+&lt;hr/&gt;
+            </code></pre>
+
+            <hr/>
+
+            <h3 class="serif">Paragraphs</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum arcu eu velit consequat cursus.</p>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum arcu eu velit consequat cursus.</p>
+
+            <pre><code class="language-markup">
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum arcu eu velit consequat cursus.&lt;/p&gt;
+&lt;p class="lead"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum arcu eu velit consequat cursus.&lt;/p&gt;
+            </code></pre>
+
+            <hr/>
+
+            <h3 class="serif">Blockquotes</h3>
+
+            <blockquote>
+                <p>When you have eliminated all which is impossible, then whatever remains, however improbable, must be the truth.</p>
+                <cite>Arthur Conan Doyle, The Case-Book of Sherlock Holmes</cite>
+            </blockquote>
+
+            <pre><code class="language-markup">
+&lt;blockquote&gt;
+    &lt;p&gt;When you have eliminated all which is impossible, then whatever remains, however improbable, must be the truth.&lt;/p&gt;
+    &lt;cite&gt;Arthur Conan Doyle, The Case-Book of Sherlock Holmes&lt;/cite&gt;
+&lt;/blockquote&gt;
+            </code></pre>
+
+            <hr/>
+
+            <h3 class="serif">Lists</h3>
+
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li class="list-title">Unordered list</li>
+                        <li>list item 1</li>
+                        <li>list item 2
+                            <ul>
+                                <li>list item 2.1</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <ol>
+                        <li class="list-title">Ordered list</li>
+                        <li>list item 2</li>
+                        <li>list item 3
+                            <ol>
+                                <li>list item 3.1</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="col">
+                    <dl>
+                        <dt class="list-title">Definition table</dt>
+                        <dt>term 1</dt>
+                        <dd>definition 1</dd>
+                        <dt>term 2</dt>
+                        <dd>definition 2</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+            <pre><code class="language-markup">
+&lt;ul&gt;
+    &lt;li class="list-title"&gt;Unordered list&lt;/li&gt;
+    &lt;li&gt;list item 1&lt;/li&gt;
+    &lt;li&gt;list item 2
+        &lt;ul&gt;
+            &lt;li&gt;list item 2.1&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+            </code></pre>
+                </div>
+
+                <div class="col">
+            <pre><code class="language-markup">
+&lt;ol&gt;
+    &lt;li class="list-title"&gt;Ordered list&lt;/li&gt;
+    &lt;li&gt;list item 2&lt;/li&gt;
+    &lt;li&gt;list item 3
+        &lt;ol&gt;
+            &lt;li&gt;list item 3.1&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+            </code></pre>
+                </div>
+
+                <div class="col">
+            <pre><code class="language-markup">
+&lt;dl&gt;
+    &lt;dt class="list-title"&gt;Definition table&lt;/dt&gt;
+    &lt;dt&gt;term 1&lt;/dt&gt;
+    &lt;dd&gt;definition 1&lt;/dd&gt;
+    &lt;dt&gt;term 2&lt;/dt&gt;
+    &lt;dd&gt;definition 2&lt;/dd&gt;
+    &lt;dt&gt;term 3&lt;/dt&gt;
+    &lt;dd&gt;definition 3&lt;/dd&gt;
+&lt;/dl&gt;
+            </code></pre>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Made with ♥ by <a href="https://github.com/crewstyle">Achraf Chouk</a> - <a href="demo.html">All demonstrations</a></p>
+        </footer>
+    </div>
+
+    <script src="prism/prism.js"></script>
+    <script src="prism/remove.js"></script>
+</body>
+</html>

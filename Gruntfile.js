@@ -19,17 +19,37 @@ module.exports = function (grunt){
                 tar: 'dist'
             },
             vars: {
-                lowes: '319px',
-                highes: '320px',
-                lows: '549px',
-                highs: '550px',
-                lowm: '719px',
-                highm: '720px',
-                lowl: '997px',
-                highl: '998px',
-                lowel: '1199px',
-                highel: '1200px',
-                asparent: '1200px'
+                //colors
+                primarycolor: '#00a0dc',
+                secondarycolor: '#ecf0f1',
+                successcolor: '#2ecc71',
+                warningcolor: '#f39c12',
+                alertcolor: '#e74c3c',
+
+                whitecolor: '#ffffff',
+                lightgraycolor: '#eff3f6',
+                mediumgraycolor: '#a0b1c1',
+                darkgraycolor: '#59626a',
+                blackcolor: '#272727',
+
+                //fonts
+                fontbase: '14px',
+
+                //grid
+                columnWidth: (100 / 12) + '%',
+                gutterWidth: '2%',
+
+                //media sizes
+                lowextrasmall: '319px',
+                highextrasmall: '320px',
+                lowsmall: '549px',
+                highsmall: '550px',
+                lowmedium: '719px',
+                highmedium: '720px',
+                lowlarge: '997px',
+                highlarge: '998px',
+                lowextralarge: '1199px',
+                highextralarge: '1200px'
             }
         },
 
@@ -51,7 +71,7 @@ module.exports = function (grunt){
                 files: {
                     '<%= yohoho.path.tar %>/standalone/<%= yohoho.name %>.css': [
                         //Gryd
-                        '<%= yohoho.path.src %>/less/gryd.less'
+                        '<%= yohoho.path.src %>/less/*.less'
                     ]
                 }
             }
