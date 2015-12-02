@@ -1,0 +1,28 @@
+/*!
+ * Urca v2.0.0 - "Banane ou crocodile, c'est quoi la différence ? Les deux se mangent, non ? - One Piece"
+ * Copyright 2015 Achraf Chouk <achrafchouk@gmail.com>
+ *
+ * https://github.com/crewstyle/Urca/blob/master/src/less/00.base.less
+ */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  background-color: #ffffff;
+}
+body {
+  color: #272727;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+.serif {
+  font-family: 'Arvo', serif;
+}

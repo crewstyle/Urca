@@ -70,9 +70,16 @@ module.exports = function (grunt){
                 },
                 files: {
                     '<%= yohoho.path.tar %>/standalone/<%= yohoho.name %>.css': [
-                        //Gryd
+                        //All components
                         '<%= yohoho.path.src %>/less/*.less'
-                    ]
+                    ],
+                    '<%= yohoho.path.tar %>/components/base.css': ['<%= yohoho.path.src %>/less/00.base.less'],
+                    '<%= yohoho.path.tar %>/components/grid.css': ['<%= yohoho.path.src %>/less/01.grid.less'],
+                    '<%= yohoho.path.tar %>/components/typography.css': ['<%= yohoho.path.src %>/less/02.typography.less'],
+                    '<%= yohoho.path.tar %>/components/float.css': ['<%= yohoho.path.src %>/less/03.float.less'],
+                    '<%= yohoho.path.tar %>/components/buttons.css': ['<%= yohoho.path.src %>/less/04.buttons.less'],
+                    '<%= yohoho.path.tar %>/components/forms.css': ['<%= yohoho.path.src %>/less/05.forms.less'],
+                    '<%= yohoho.path.tar %>/components/tables.css': ['<%= yohoho.path.src %>/less/06.tables.less']
                 }
             }
         },

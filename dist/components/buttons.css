@@ -1,0 +1,192 @@
+/*!
+ * Copyright 2015 Achraf Chouk <achrafchouk@gmail.com>
+ * https://github.com/crewstyle/Urca/blob/master/src/less/04.buttons.less ~ Urca v2.0.0
+ */
+.btn,
+button {
+  background-color: #ecf0f1;
+  background-image: -webkit-linear-gradient(top, #dde4e6, #ecf0f1);
+  background-image: linear-gradient(top, #dde4e6, #ecf0f1);
+  border-radius: 2px;
+  border: 1px solid transparent;
+  box-shadow: none;
+  color: #272727;
+  cursor: pointer;
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: 700;
+  height: 2.2em;
+  line-height: 2.2em;
+  outline: 0;
+  padding: 0 1em;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 1px rgba(39, 39, 39, 0.1);
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-transition: background-color ease 0.5s, background-image ease 0.5s, border ease 0.5s, box-shadow ease 0.5s, color ease 0.5s;
+  -moz-transition: background-color ease 0.5s, background-image ease 0.5s, border ease 0.5s, box-shadow ease 0.5s, color ease 0.5s;
+  transition: background-color ease 0.5s, background-image ease 0.5s, border ease 0.5s, box-shadow ease 0.5s, color ease 0.5s;
+}
+.btn:focus,
+button:focus,
+.btn:hover,
+button:hover {
+  background-color: #cfd9db;
+  background-image: -webkit-linear-gradient(top, #dde4e6, #cfd9db);
+  background-image: linear-gradient(top, #dde4e6, #cfd9db);
+  border-color: #c0cdd1;
+  border-bottom-color: #b1c2c6;
+  box-shadow: 0 0 0 2px rgba(160, 177, 193, 0.5);
+  color: #272727;
+  text-decoration: none;
+}
+.btn.primary,
+button.primary {
+  background-color: #00a0dc;
+  background-image: -webkit-linear-gradient(top, #008dc3, #00a0dc);
+  background-image: linear-gradient(top, #008dc3, #00a0dc);
+  color: #ffffff;
+}
+.btn.primary:focus,
+button.primary:focus,
+.btn.primary:hover,
+button.primary:hover {
+  background-color: #007ba9;
+  background-image: -webkit-linear-gradient(top, #008dc3, #007ba9);
+  background-image: linear-gradient(top, #008dc3, #007ba9);
+  color: #ffffff;
+  border-color: #006890;
+  border-bottom-color: #005676;
+  box-shadow: 0 0 0 2px rgba(0, 160, 220, 0.5);
+}
+.btn.success,
+button.success {
+  background-color: #2ecc71;
+  background-image: -webkit-linear-gradient(top, #29b765, #2ecc71);
+  background-image: linear-gradient(top, #29b765, #2ecc71);
+  color: #ffffff;
+}
+.btn.success:focus,
+button.success:focus,
+.btn.success:hover,
+button.success:hover {
+  background-color: #25a25a;
+  background-image: -webkit-linear-gradient(top, #29b765, #25a25a);
+  background-image: linear-gradient(top, #29b765, #25a25a);
+  color: #ffffff;
+  border-color: #208e4e;
+  border-bottom-color: #1b7943;
+  box-shadow: 0 0 0 2px rgba(46, 204, 113, 0.5);
+}
+.btn.warning,
+button.warning {
+  background-color: #f39c12;
+  background-image: -webkit-linear-gradient(top, #e08e0b, #f39c12);
+  background-image: linear-gradient(top, #e08e0b, #f39c12);
+  color: #ffffff;
+}
+.btn.warning:focus,
+button.warning:focus,
+.btn.warning:hover,
+button.warning:hover {
+  background-color: #c87f0a;
+  background-image: -webkit-linear-gradient(top, #e08e0b, #c87f0a);
+  background-image: linear-gradient(top, #e08e0b, #c87f0a);
+  color: #ffffff;
+  border-color: #b06f09;
+  border-bottom-color: #976008;
+  box-shadow: 0 0 0 2px rgba(243, 156, 18, 0.5);
+}
+.btn.alert,
+button.alert {
+  background-color: #e74c3c;
+  background-image: -webkit-linear-gradient(top, #e43725, #e74c3c);
+  background-image: linear-gradient(top, #e43725, #e74c3c);
+  color: #ffffff;
+}
+.btn.alert:focus,
+button.alert:focus,
+.btn.alert:hover,
+button.alert:hover {
+  background-color: #d62c1a;
+  background-image: -webkit-linear-gradient(top, #e43725, #d62c1a);
+  background-image: linear-gradient(top, #e43725, #d62c1a);
+  color: #ffffff;
+  border-color: #bf2718;
+  border-bottom-color: #a82315;
+  box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.5);
+}
+.btn.link,
+button.link {
+  background-color: transparent;
+  background-image: none;
+}
+.btn.link.primary,
+button.link.primary {
+  color: #00a0dc;
+}
+.btn.link.success,
+button.link.success {
+  color: #2ecc71;
+}
+.btn.link.warning,
+button.link.warning {
+  color: #f39c12;
+}
+.btn.link.alert,
+button.link.alert {
+  color: #e74c3c;
+}
+.btn.link:focus,
+button.link:focus,
+.btn.link:hover,
+button.link:hover {
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-bottom-color: transparent;
+  box-shadow: none;
+  text-decoration: underline;
+}
+.btn.xlarge,
+button.xlarge {
+  font-size: 1.2rem;
+}
+.btn.large,
+button.large {
+  font-size: 1rem;
+}
+.btn.small,
+button.small {
+  font-size: .7rem;
+}
+.btn.xsmall,
+button.xsmall {
+  font-size: .5rem;
+}
+.btn.gdrive,
+button.gdrive {
+  background-color: #d14836;
+  background-image: -webkit-linear-gradient(top, #dd4b39, #d14836);
+  background-image: linear-gradient(top, #dd4b39, #d14836);
+  color: #ffffff;
+}
+.btn.gdrive:focus,
+button.gdrive:focus,
+.btn.gdrive:hover,
+button.gdrive:hover {
+  background-color: #c53727;
+  background-image: -webkit-linear-gradient(top, #dd4b39, #c53727);
+  background-image: linear-gradient(top, #dd4b39, #c53727);
+  border: 1px solid #b0281a;
+  border-bottom-color: #af301f;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.btn[disabled],
+button[disabled] {
+  cursor: not-allowed;
+  opacity: .25;
+  pointer-events: none;
+}

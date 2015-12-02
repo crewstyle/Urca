@@ -1,0 +1,15 @@
+/*!
+ * Copyright 2015 Achraf Chouk <achrafchouk@gmail.com>
+ * https://github.com/crewstyle/Urca/blob/master/src/less/03.float.less ~ Urca v2.0.0
+ */
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.float-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
