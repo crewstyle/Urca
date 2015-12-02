@@ -93,7 +93,14 @@ module.exports = function (grunt){
                         '<%= yohoho.path.bow %>/normalize-css/normalize.css',
                         //Urca
                         '<%= yohoho.path.tar %>/standalone/<%= yohoho.name %>.css'
-                    ]
+                    ],
+                    '<%= yohoho.path.tar %>/components/base.min.css': ['<%= yohoho.path.tar %>/components/base.css'],
+                    '<%= yohoho.path.tar %>/components/grid.min.css': ['<%= yohoho.path.tar %>/components/grid.css'],
+                    '<%= yohoho.path.tar %>/components/typography.min.css': ['<%= yohoho.path.tar %>/components/typography.css'],
+                    '<%= yohoho.path.tar %>/components/float.min.css': ['<%= yohoho.path.tar %>/components/float.css'],
+                    '<%= yohoho.path.tar %>/components/buttons.min.css': ['<%= yohoho.path.tar %>/components/buttons.css'],
+                    '<%= yohoho.path.tar %>/components/forms.min.css': ['<%= yohoho.path.tar %>/components/forms.css'],
+                    '<%= yohoho.path.tar %>/components/tables.min.css': ['<%= yohoho.path.tar %>/components/tables.css']
                 }
             }
         }
