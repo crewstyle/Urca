@@ -23,25 +23,12 @@
 @extraLargeScreen: ~"only screen and (min-width: @{highextralarge})";
 
 
-//-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› CONTAINER
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1100px;
-    width: auto;
-
-    &.small {
-        max-width: 768px;
-    }
-}
-
-
 //-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› ROWS
 .row, .rows {
     list-style: none;
     margin-bottom: 0;
-    margin-left: -(@gutterWidth / 2);
-    margin-right: -(@gutterWidth / 2);
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0;
     padding: 0;
     width: auto;
@@ -342,6 +329,41 @@
             -webkit-flex: none;
             -ms-flex: none;
             flex: none;
+        }
+    }
+}
+
+
+//-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-›-› CONTAINER
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: @extraLargeWidth;
+    width: auto;
+
+    &.extrasmall {
+        max-width: @extraSmallWidth;
+    }
+
+    &.small {
+        max-width: @smallWidth;
+    }
+
+    &.medium {
+        max-width: @mediumWidth;
+    }
+
+    &.large {
+        max-width: @largeWidth;
+    }
+
+    .row, .rows {
+        margin-left: -(@gutterWidth / 2);
+        margin-right: -(@gutterWidth / 2);
+
+        .row, .rows {
+            margin-left: 0;
+            margin-right: 0;
         }
     }
 }
