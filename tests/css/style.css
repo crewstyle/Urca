@@ -77,16 +77,24 @@ hr {
     box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.5);
 }
 
-/*pre[class*="language-"] {
-    background-color: #fff;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-    box-shadow: 0 0 0 3px #eee;
-    color: #4d4d4c;
-    font-size: 14px;
-    padding: 10px;
+.rows {
+    margin-bottom: 20px;
+    position: relative;
 }
-pre[class*="language-"] code {
-    background-color: transparent;
-    padding: 0;
-}*/
+
+.rows article.col,
+.rows article.cols {
+    background-color: rgba(245,245,245,.5);
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    padding: 4px;
+    text-align: center;
+}
+.rows.no-gutter article.col,
+.rows.no-gutter article.cols {
+    border-radius: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}

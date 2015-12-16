@@ -1,20 +1,19 @@
 {
   "name": "yohoho.urca",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "an other \"best\" grid system, no frustrations inside - guaranteed!",
-  "main": "gryd.less",
+  "main": "dist/urca.min.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/crewstyle/gryd.git"
+    "url": "https://github.com/crewstyle/urca.git"
   },
   "keywords": [
     "urca",
-    "gryd",
-    "grid",
     "flex",
+    "grid",
     "css",
     "less",
     "mobile",

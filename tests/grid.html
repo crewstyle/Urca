@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Urca Grid</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="prism/prism.css" />
+    <link rel="stylesheet" href="../dist/urca.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="container large">
+        <header>
+            <h1>Urca &rsaquo; Grid</h1>
+            <p></p>
+        </header>
+
+        <!-- buttons -->
+        <section>
+            <h2>Getting started</h2>
+
+            <p><strong>Urca</strong>'s grid includes a responsive, mobile-first <strong>12-column</strong> fluid grid system. A container is provided as a wrapper to set a max width, which can be easily overrided. The syntax is simple and semantic.<br/>It uses new <code>flex</code> CSS attribute instead of <code>inline-block</code> display or <code>float</code> elements.</p>
+        </section>
+
+        <section>
+            <h2>Options</h2>
+
+            <h3 class="serif">Rows and cols</h3>
+
+            <p>You can easily build your web applications with rows and columns. The main structure of your application can be set in a single row thanks to the <code>.row</code> or <code>.rows</code> CSS classes.<br><strong>Urca</strong>'s grid provide two ways to set your column's width in addition to the <code>.col</code> or <code>.cols</code> CSS classes:</p>
+
+            <ul>
+                <li>define width specifically for each one</li>
+                <li>let the bowser defining it for you</li>
+            </ul>
+
+            <p>Here is an example with specified widths:</p>
+
+            <div class="rows">
+                <article class="col four">item 1</article>
+                <article class="col four">item 2</article>
+                <article class="col four">item 3</article>
+                <article class="col four">item 4</article>
+            </div>
+
+            <pre><code class="language-markup">
+&lt;!-- You specify a width for each column --&gt;
+&lt;section class="row"&gt;
+    &lt;article class="col four"&gt;item 1&lt;/article&gt;
+    &lt;article class="col four"&gt;item 2&lt;/article&gt;
+    &lt;article class="col four"&gt;item 3&lt;/article&gt;
+    &lt;article class="col four"&gt;item 4&lt;/article&gt;
+&lt;/section&gt;
+            </code></pre>
+
+            <p>Here is an example with auto widths set by the browser:</p>
+
+            <div class="rows">
+                <article class="col">item 1</article>
+                <article class="col">item 2</article>
+                <article class="col">item 3</article>
+                <article class="col">item 4</article>
+            </div>
+
+            <pre><code class="language-markup">
+&lt;!-- You specify a width for each column --&gt;
+&lt;section class="row"&gt;
+    &lt;article class="col"&gt;item 1&lt;/article&gt;
+    &lt;article class="col"&gt;item 2&lt;/article&gt;
+    &lt;article class="col"&gt;item 3&lt;/article&gt;
+    &lt;article class="col"&gt;item 4&lt;/article&gt;
+&lt;/section&gt;
+            </code></pre>
+
+            <p>Oh, you can easily mix auto and specified column's width if you need to:</p>
+
+            <div class="rows">
+                <article class="col">auto</article>
+                <article class="col">auto</article>
+                <article class="col six">item half size</article>
+                <article class="col">auto</article>
+                <article class="col">auto</article>
+            </div>
+
+            <pre><code class="language-markup">
+&lt;!-- You specify a width for each column --&gt;
+&lt;section class="row"&gt;
+    &lt;article class="col"&gt;auto&lt;/article&gt;
+    &lt;article class="col"&gt;auto&lt;/article&gt;
+    &lt;article class="col size"&gt;item half size&lt;/article&gt;
+    &lt;article class="col"&gt;auto&lt;/article&gt;
+    &lt;article class="col"&gt;auto&lt;/article&gt;
+&lt;/section&gt;
+            </code></pre>
+
+            <hr/>
+
+            <h3 class="serif">All sizes</h3>
+
+            <div class="rows">
+                <article class="col one">One</article>
+                <article class="col two">Two</article>
+                <article class="col three">Three</article>
+                <article class="col four">Four</article>
+                <article class="col five">Five</article>
+                <article class="col six">Six</article>
+                <article class="col seven">Seven</article>
+                <article class="col eight">Eight</article>
+                <article class="col nine">Nine</article>
+                <article class="col ten">Ten</article>
+                <article class="col eleven">Eleven</article>
+                <article class="col twelve">Twelve</article>
+            </div>
+
+            <hr/>
+
+            <div class="rows no-gutter">
+                <article class="col one">One</article>
+                <article class="col two">Two</article>
+                <article class="col three">Three</article>
+                <article class="col four">Four</article>
+                <article class="col five">Five</article>
+                <article class="col six">Six</article>
+                <article class="col seven">Seven</article>
+                <article class="col eight">Eight</article>
+                <article class="col nine">Nine</article>
+                <article class="col ten">Ten</article>
+                <article class="col eleven">Eleven</article>
+                <article class="col twelve">Twelve</article>
+            </div>
+
+            <hr/>
+
+            <h3 class="serif">-</h3>
+        </section>
+
+        <footer>
+            <p>Made with ♥ by <a href="https://github.com/crewstyle">Achraf Chouk</a> - <a href="demo.html">All demonstrations</a></p>
+        </footer>
+    </div>
+
+    <script src="prism/prism.js"></script>
+    <script src="prism/remove.js"></script>
+</body>
+</html>

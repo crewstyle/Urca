@@ -1,6 +1,6 @@
 /*!
  * Copyright 2015 Achraf Chouk <achrafchouk@gmail.com>
- * https://github.com/crewstyle/Urca/blob/master/src/less/01.grid.less ~ Urca v2.0.0
+ * https://github.com/crewstyle/Urca/blob/master/src/less/01.grid.less ~ Urca v2.0.1
  */
 .row,
 .rows {
@@ -36,8 +36,8 @@
 .rows .cols {
   display: inline-block;
   list-style: none;
-  margin-left: 1%;
-  margin-right: 1%;
+  margin-left: 0;
+  margin-right: 0;
   padding-left: 0;
   padding-right: 0;
   -webkit-box-sizing: border-box;
@@ -45,9 +45,10 @@
   box-sizing: border-box;
   -webkit-align-self: auto;
   align-self: auto;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
 }
 .row .col.align-s-auto,
 .rows .col.align-s-auto,
@@ -101,78 +102,6 @@
 .row .col.one,
 .rows .col.one,
 .row .cols.one,
-.rows .cols.one {
-  width: 6.33333333%;
-}
-.row .col.two,
-.rows .col.two,
-.row .cols.two,
-.rows .cols.two {
-  width: 14.66666667%;
-}
-.row .col.three,
-.rows .col.three,
-.row .cols.three,
-.rows .cols.three {
-  width: 23%;
-}
-.row .col.four,
-.rows .col.four,
-.row .cols.four,
-.rows .cols.four {
-  width: 31.33333333%;
-}
-.row .col.five,
-.rows .col.five,
-.row .cols.five,
-.rows .cols.five {
-  width: 39.66666667%;
-}
-.row .col.six,
-.rows .col.six,
-.row .cols.six,
-.rows .cols.six {
-  width: 48%;
-}
-.row .col.seven,
-.rows .col.seven,
-.row .cols.seven,
-.rows .cols.seven {
-  width: 56.33333333%;
-}
-.row .col.eight,
-.rows .col.eight,
-.row .cols.eight,
-.rows .cols.eight {
-  width: 64.66666667%;
-}
-.row .col.nine,
-.rows .col.nine,
-.row .cols.nine,
-.rows .cols.nine {
-  width: 73%;
-}
-.row .col.ten,
-.rows .col.ten,
-.row .cols.ten,
-.rows .cols.ten {
-  width: 81.33333333%;
-}
-.row .col.eleven,
-.rows .col.eleven,
-.row .cols.eleven,
-.rows .cols.eleven {
-  width: 89.66666667%;
-}
-.row .col.twelve,
-.rows .col.twelve,
-.row .cols.twelve,
-.rows .cols.twelve {
-  width: 98%;
-}
-.row .col.one,
-.rows .col.one,
-.row .cols.one,
 .rows .cols.one,
 .row .col.two,
 .rows .col.two,
@@ -218,9 +147,10 @@
 .rows .col.twelve,
 .row .cols.twelve,
 .rows .cols.twelve {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
 }
 .row.align-c-flex-start,
 .rows.align-c-flex-start {
@@ -337,85 +267,6 @@
   -webkit-justify-content: space-around;
   justify-content: space-around;
 }
-.row.no-gutter .col,
-.rows.no-gutter .col,
-.row.no-gutter .cols,
-.rows.no-gutter .cols {
-  margin-left: 0;
-  margin-right: 0;
-}
-.row.no-gutter .col.one,
-.rows.no-gutter .col.one,
-.row.no-gutter .cols.one,
-.rows.no-gutter .cols.one {
-  width: 8.33333333%;
-}
-.row.no-gutter .col.two,
-.rows.no-gutter .col.two,
-.row.no-gutter .cols.two,
-.rows.no-gutter .cols.two {
-  width: 16.66666667%;
-}
-.row.no-gutter .col.three,
-.rows.no-gutter .col.three,
-.row.no-gutter .cols.three,
-.rows.no-gutter .cols.three {
-  width: 25%;
-}
-.row.no-gutter .col.four,
-.rows.no-gutter .col.four,
-.row.no-gutter .cols.four,
-.rows.no-gutter .cols.four {
-  width: 33.33333333%;
-}
-.row.no-gutter .col.five,
-.rows.no-gutter .col.five,
-.row.no-gutter .cols.five,
-.rows.no-gutter .cols.five {
-  width: 41.66666667%;
-}
-.row.no-gutter .col.six,
-.rows.no-gutter .col.six,
-.row.no-gutter .cols.six,
-.rows.no-gutter .cols.six {
-  width: 50%;
-}
-.row.no-gutter .col.seven,
-.rows.no-gutter .col.seven,
-.row.no-gutter .cols.seven,
-.rows.no-gutter .cols.seven {
-  width: 58.33333333%;
-}
-.row.no-gutter .col.eight,
-.rows.no-gutter .col.eight,
-.row.no-gutter .cols.eight,
-.rows.no-gutter .cols.eight {
-  width: 66.66666667%;
-}
-.row.no-gutter .col.nine,
-.rows.no-gutter .col.nine,
-.row.no-gutter .cols.nine,
-.rows.no-gutter .cols.nine {
-  width: 75%;
-}
-.row.no-gutter .col.ten,
-.rows.no-gutter .col.ten,
-.row.no-gutter .cols.ten,
-.rows.no-gutter .cols.ten {
-  width: 83.33333333%;
-}
-.row.no-gutter .col.eleven,
-.rows.no-gutter .col.eleven,
-.row.no-gutter .cols.eleven,
-.rows.no-gutter .cols.eleven {
-  width: 91.66666667%;
-}
-.row.no-gutter .col.twelve,
-.rows.no-gutter .col.twelve,
-.row.no-gutter .cols.twelve,
-.rows.no-gutter .cols.twelve {
-  width: 100%;
-}
 .row.flex-d-row .col,
 .rows.flex-d-row .col,
 .row.flex-d-row-reverse .col,
@@ -463,7 +314,7 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
-  width: auto;
+  width: 98%;
 }
 .container.extrasmall {
   max-width: 320px;
@@ -479,8 +330,8 @@
 }
 .container .row,
 .container .rows {
-  margin-left: -1%;
-  margin-right: -1%;
+  margin-left: 0;
+  margin-right: 0;
 }
 .container .row .row,
 .container .rows .row,
@@ -495,9 +346,160 @@
   }
 }
 @media only screen and (min-width: 550px) {
+  .container {
+    width: 96%;
+  }
+  .container .row,
+  .container .rows {
+    margin-left: -1%;
+    margin-right: -1%;
+  }
+  .container .row.no-gutter,
+  .container .rows.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .row,
   .rows {
-    max-width: 550px;
+    max-width: 719px;
+  }
+  .row .col,
+  .rows .col,
+  .row .cols,
+  .rows .cols {
+    margin-left: 1%;
+    margin-right: 1%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 48%;
+    -ms-flex: 0 0 48%;
+    flex: 0 0 48%;
+  }
+  .row .col.one,
+  .rows .col.one,
+  .row .cols.one,
+  .rows .cols.one,
+  .row .col.two,
+  .rows .col.two,
+  .row .cols.two,
+  .rows .cols.two,
+  .row .col.three,
+  .rows .col.three,
+  .row .cols.three,
+  .rows .cols.three,
+  .row .col.four,
+  .rows .col.four,
+  .row .cols.four,
+  .rows .cols.four,
+  .row .col.five,
+  .rows .col.five,
+  .row .cols.five,
+  .rows .cols.five,
+  .row .col.six,
+  .rows .col.six,
+  .row .cols.six,
+  .rows .cols.six {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 48%;
+    -ms-flex: 0 0 48%;
+    flex: 0 0 48%;
+  }
+  .row .col.seven,
+  .rows .col.seven,
+  .row .cols.seven,
+  .rows .cols.seven,
+  .row .col.eight,
+  .rows .col.eight,
+  .row .cols.eight,
+  .rows .cols.eight,
+  .row .col.nine,
+  .rows .col.nine,
+  .row .cols.nine,
+  .rows .cols.nine,
+  .row .col.ten,
+  .rows .col.ten,
+  .row .cols.ten,
+  .rows .cols.ten,
+  .row .col.eleven,
+  .rows .col.eleven,
+  .row .cols.eleven,
+  .rows .cols.eleven,
+  .row .col.twelve,
+  .rows .col.twelve,
+  .row .cols.twelve,
+  .rows .cols.twelve {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 98%;
+    -ms-flex: 0 0 98%;
+    flex: 0 0 98%;
+  }
+  .row.no-gutter .col,
+  .rows.no-gutter .col,
+  .row.no-gutter .cols,
+  .rows.no-gutter .cols {
+    margin-left: 0;
+    margin-right: 0;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+  .row.no-gutter .col.one,
+  .rows.no-gutter .col.one,
+  .row.no-gutter .cols.one,
+  .rows.no-gutter .cols.one,
+  .row.no-gutter .col.two,
+  .rows.no-gutter .col.two,
+  .row.no-gutter .cols.two,
+  .rows.no-gutter .cols.two,
+  .row.no-gutter .col.three,
+  .rows.no-gutter .col.three,
+  .row.no-gutter .cols.three,
+  .rows.no-gutter .cols.three,
+  .row.no-gutter .col.four,
+  .rows.no-gutter .col.four,
+  .row.no-gutter .cols.four,
+  .rows.no-gutter .cols.four,
+  .row.no-gutter .col.five,
+  .rows.no-gutter .col.five,
+  .row.no-gutter .cols.five,
+  .rows.no-gutter .cols.five,
+  .row.no-gutter .col.six,
+  .rows.no-gutter .col.six,
+  .row.no-gutter .cols.six,
+  .rows.no-gutter .cols.six {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+  .row.no-gutter .col.seven,
+  .rows.no-gutter .col.seven,
+  .row.no-gutter .cols.seven,
+  .rows.no-gutter .cols.seven,
+  .row.no-gutter .col.eight,
+  .rows.no-gutter .col.eight,
+  .row.no-gutter .cols.eight,
+  .rows.no-gutter .cols.eight,
+  .row.no-gutter .col.nine,
+  .rows.no-gutter .col.nine,
+  .row.no-gutter .cols.nine,
+  .rows.no-gutter .cols.nine,
+  .row.no-gutter .col.ten,
+  .rows.no-gutter .col.ten,
+  .row.no-gutter .cols.ten,
+  .rows.no-gutter .cols.ten,
+  .row.no-gutter .col.eleven,
+  .rows.no-gutter .col.eleven,
+  .row.no-gutter .cols.eleven,
+  .rows.no-gutter .cols.eleven,
+  .row.no-gutter .col.twelve,
+  .rows.no-gutter .col.twelve,
+  .row.no-gutter .cols.twelve,
+  .rows.no-gutter .cols.twelve {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
   }
 }
 @media only screen and (min-width: 550px) and (max-width: 719px) {
@@ -508,7 +510,211 @@
 @media only screen and (min-width: 720px) {
   .row,
   .rows {
-    max-width: 720px;
+    max-width: 997px;
+  }
+  .row .col,
+  .rows .col,
+  .row .cols,
+  .rows .cols {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .row .col.one,
+  .rows .col.one,
+  .row .cols.one,
+  .rows .cols.one {
+    width: 14.66666667%;
+  }
+  .row .col.two,
+  .rows .col.two,
+  .row .cols.two,
+  .rows .cols.two {
+    width: 31.33333333%;
+  }
+  .row .col.three,
+  .rows .col.three,
+  .row .cols.three,
+  .rows .cols.three {
+    width: 48%;
+  }
+  .row .col.four,
+  .rows .col.four,
+  .row .cols.four,
+  .rows .cols.four {
+    width: 64.66666667%;
+  }
+  .row .col.five,
+  .rows .col.five,
+  .row .cols.five,
+  .rows .cols.five {
+    width: 81.33333333%;
+  }
+  .row .col.six,
+  .rows .col.six,
+  .row .cols.six,
+  .rows .cols.six {
+    width: 98%;
+  }
+  .row .col.one,
+  .rows .col.one,
+  .row .cols.one,
+  .rows .cols.one,
+  .row .col.two,
+  .rows .col.two,
+  .row .cols.two,
+  .rows .cols.two,
+  .row .col.three,
+  .rows .col.three,
+  .row .cols.three,
+  .rows .cols.three,
+  .row .col.four,
+  .rows .col.four,
+  .row .cols.four,
+  .rows .cols.four,
+  .row .col.five,
+  .rows .col.five,
+  .row .cols.five,
+  .rows .cols.five,
+  .row .col.six,
+  .rows .col.six,
+  .row .cols.six,
+  .rows .cols.six {
+    -webkit-box-flex: none;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+  }
+  .row .col.seven,
+  .rows .col.seven,
+  .row .cols.seven,
+  .rows .cols.seven,
+  .row .col.eight,
+  .rows .col.eight,
+  .row .cols.eight,
+  .rows .cols.eight,
+  .row .col.nine,
+  .rows .col.nine,
+  .row .cols.nine,
+  .rows .cols.nine,
+  .row .col.ten,
+  .rows .col.ten,
+  .row .cols.ten,
+  .rows .cols.ten,
+  .row .col.eleven,
+  .rows .col.eleven,
+  .row .cols.eleven,
+  .rows .cols.eleven,
+  .row .col.twelve,
+  .rows .col.twelve,
+  .row .cols.twelve,
+  .rows .cols.twelve {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 48%;
+    -ms-flex: 0 0 48%;
+    flex: 0 0 48%;
+  }
+  .row.no-gutter .col,
+  .rows.no-gutter .col,
+  .row.no-gutter .cols,
+  .rows.no-gutter .cols {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .row.no-gutter .col.one,
+  .rows.no-gutter .col.one,
+  .row.no-gutter .cols.one,
+  .rows.no-gutter .cols.one {
+    width: 16.66666667%;
+  }
+  .row.no-gutter .col.two,
+  .rows.no-gutter .col.two,
+  .row.no-gutter .cols.two,
+  .rows.no-gutter .cols.two {
+    width: 33.33333333%;
+  }
+  .row.no-gutter .col.three,
+  .rows.no-gutter .col.three,
+  .row.no-gutter .cols.three,
+  .rows.no-gutter .cols.three {
+    width: 50%;
+  }
+  .row.no-gutter .col.four,
+  .rows.no-gutter .col.four,
+  .row.no-gutter .cols.four,
+  .rows.no-gutter .cols.four {
+    width: 66.66666667%;
+  }
+  .row.no-gutter .col.five,
+  .rows.no-gutter .col.five,
+  .row.no-gutter .cols.five,
+  .rows.no-gutter .cols.five {
+    width: 83.33333333%;
+  }
+  .row.no-gutter .col.six,
+  .rows.no-gutter .col.six,
+  .row.no-gutter .cols.six,
+  .rows.no-gutter .cols.six {
+    width: 100%;
+  }
+  .row.no-gutter .col.one,
+  .rows.no-gutter .col.one,
+  .row.no-gutter .cols.one,
+  .rows.no-gutter .cols.one,
+  .row.no-gutter .col.two,
+  .rows.no-gutter .col.two,
+  .row.no-gutter .cols.two,
+  .rows.no-gutter .cols.two,
+  .row.no-gutter .col.three,
+  .rows.no-gutter .col.three,
+  .row.no-gutter .cols.three,
+  .rows.no-gutter .cols.three,
+  .row.no-gutter .col.four,
+  .rows.no-gutter .col.four,
+  .row.no-gutter .cols.four,
+  .rows.no-gutter .cols.four,
+  .row.no-gutter .col.five,
+  .rows.no-gutter .col.five,
+  .row.no-gutter .cols.five,
+  .rows.no-gutter .cols.five,
+  .row.no-gutter .col.six,
+  .rows.no-gutter .col.six,
+  .row.no-gutter .cols.six,
+  .rows.no-gutter .cols.six {
+    -webkit-box-flex: none;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+  }
+  .row.no-gutter .col.seven,
+  .rows.no-gutter .col.seven,
+  .row.no-gutter .cols.seven,
+  .rows.no-gutter .cols.seven,
+  .row.no-gutter .col.eight,
+  .rows.no-gutter .col.eight,
+  .row.no-gutter .cols.eight,
+  .rows.no-gutter .cols.eight,
+  .row.no-gutter .col.nine,
+  .rows.no-gutter .col.nine,
+  .row.no-gutter .cols.nine,
+  .rows.no-gutter .cols.nine,
+  .row.no-gutter .col.ten,
+  .rows.no-gutter .col.ten,
+  .row.no-gutter .cols.ten,
+  .rows.no-gutter .cols.ten,
+  .row.no-gutter .col.eleven,
+  .rows.no-gutter .col.eleven,
+  .row.no-gutter .cols.eleven,
+  .rows.no-gutter .cols.eleven,
+  .row.no-gutter .col.twelve,
+  .rows.no-gutter .col.twelve,
+  .row.no-gutter .cols.twelve,
+  .rows.no-gutter .cols.twelve {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
   }
 }
 @media only screen and (min-width: 720px) and (max-width: 997px) {
@@ -517,9 +723,226 @@
   }
 }
 @media only screen and (min-width: 998px) {
+  .container {
+    width: auto;
+  }
+  .container .row,
+  .container .rows {
+    margin-left: -1%;
+    margin-right: -1%;
+  }
   .row,
   .rows {
-    max-width: 998px;
+    max-width: 1199px;
+  }
+  .row .col.one,
+  .rows .col.one,
+  .row .cols.one,
+  .rows .cols.one {
+    width: 6.33333333%;
+  }
+  .row .col.two,
+  .rows .col.two,
+  .row .cols.two,
+  .rows .cols.two {
+    width: 14.66666667%;
+  }
+  .row .col.three,
+  .rows .col.three,
+  .row .cols.three,
+  .rows .cols.three {
+    width: 23%;
+  }
+  .row .col.four,
+  .rows .col.four,
+  .row .cols.four,
+  .rows .cols.four {
+    width: 31.33333333%;
+  }
+  .row .col.five,
+  .rows .col.five,
+  .row .cols.five,
+  .rows .cols.five {
+    width: 39.66666667%;
+  }
+  .row .col.six,
+  .rows .col.six,
+  .row .cols.six,
+  .rows .cols.six {
+    width: 48%;
+  }
+  .row .col.seven,
+  .rows .col.seven,
+  .row .cols.seven,
+  .rows .cols.seven {
+    width: 56.33333333%;
+  }
+  .row .col.eight,
+  .rows .col.eight,
+  .row .cols.eight,
+  .rows .cols.eight {
+    width: 64.66666667%;
+  }
+  .row .col.nine,
+  .rows .col.nine,
+  .row .cols.nine,
+  .rows .cols.nine {
+    width: 73%;
+  }
+  .row .col.ten,
+  .rows .col.ten,
+  .row .cols.ten,
+  .rows .cols.ten {
+    width: 81.33333333%;
+  }
+  .row .col.eleven,
+  .rows .col.eleven,
+  .row .cols.eleven,
+  .rows .cols.eleven {
+    width: 89.66666667%;
+  }
+  .row .col.twelve,
+  .rows .col.twelve,
+  .row .cols.twelve,
+  .rows .cols.twelve {
+    width: 98%;
+  }
+  .row .col.seven,
+  .rows .col.seven,
+  .row .cols.seven,
+  .rows .cols.seven,
+  .row .col.eight,
+  .rows .col.eight,
+  .row .cols.eight,
+  .rows .cols.eight,
+  .row .col.nine,
+  .rows .col.nine,
+  .row .cols.nine,
+  .rows .cols.nine,
+  .row .col.ten,
+  .rows .col.ten,
+  .row .cols.ten,
+  .rows .cols.ten,
+  .row .col.eleven,
+  .rows .col.eleven,
+  .row .cols.eleven,
+  .rows .cols.eleven,
+  .row .col.twelve,
+  .rows .col.twelve,
+  .row .cols.twelve,
+  .rows .cols.twelve {
+    -webkit-box-flex: none;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+  }
+  .row.no-gutter .col,
+  .rows.no-gutter .col,
+  .row.no-gutter .cols,
+  .rows.no-gutter .cols {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .row.no-gutter .col.one,
+  .rows.no-gutter .col.one,
+  .row.no-gutter .cols.one,
+  .rows.no-gutter .cols.one {
+    width: 8.33333333%;
+  }
+  .row.no-gutter .col.two,
+  .rows.no-gutter .col.two,
+  .row.no-gutter .cols.two,
+  .rows.no-gutter .cols.two {
+    width: 16.66666667%;
+  }
+  .row.no-gutter .col.three,
+  .rows.no-gutter .col.three,
+  .row.no-gutter .cols.three,
+  .rows.no-gutter .cols.three {
+    width: 25%;
+  }
+  .row.no-gutter .col.four,
+  .rows.no-gutter .col.four,
+  .row.no-gutter .cols.four,
+  .rows.no-gutter .cols.four {
+    width: 33.33333333%;
+  }
+  .row.no-gutter .col.five,
+  .rows.no-gutter .col.five,
+  .row.no-gutter .cols.five,
+  .rows.no-gutter .cols.five {
+    width: 41.66666667%;
+  }
+  .row.no-gutter .col.six,
+  .rows.no-gutter .col.six,
+  .row.no-gutter .cols.six,
+  .rows.no-gutter .cols.six {
+    width: 50%;
+  }
+  .row.no-gutter .col.seven,
+  .rows.no-gutter .col.seven,
+  .row.no-gutter .cols.seven,
+  .rows.no-gutter .cols.seven {
+    width: 58.33333333%;
+  }
+  .row.no-gutter .col.eight,
+  .rows.no-gutter .col.eight,
+  .row.no-gutter .cols.eight,
+  .rows.no-gutter .cols.eight {
+    width: 66.66666667%;
+  }
+  .row.no-gutter .col.nine,
+  .rows.no-gutter .col.nine,
+  .row.no-gutter .cols.nine,
+  .rows.no-gutter .cols.nine {
+    width: 75%;
+  }
+  .row.no-gutter .col.ten,
+  .rows.no-gutter .col.ten,
+  .row.no-gutter .cols.ten,
+  .rows.no-gutter .cols.ten {
+    width: 83.33333333%;
+  }
+  .row.no-gutter .col.eleven,
+  .rows.no-gutter .col.eleven,
+  .row.no-gutter .cols.eleven,
+  .rows.no-gutter .cols.eleven {
+    width: 91.66666667%;
+  }
+  .row.no-gutter .col.twelve,
+  .rows.no-gutter .col.twelve,
+  .row.no-gutter .cols.twelve,
+  .rows.no-gutter .cols.twelve {
+    width: 100%;
+  }
+  .row.no-gutter .col.seven,
+  .rows.no-gutter .col.seven,
+  .row.no-gutter .cols.seven,
+  .rows.no-gutter .cols.seven,
+  .row.no-gutter .col.eight,
+  .rows.no-gutter .col.eight,
+  .row.no-gutter .cols.eight,
+  .rows.no-gutter .cols.eight,
+  .row.no-gutter .col.nine,
+  .rows.no-gutter .col.nine,
+  .row.no-gutter .cols.nine,
+  .rows.no-gutter .cols.nine,
+  .row.no-gutter .col.ten,
+  .rows.no-gutter .col.ten,
+  .row.no-gutter .cols.ten,
+  .rows.no-gutter .cols.ten,
+  .row.no-gutter .col.eleven,
+  .rows.no-gutter .col.eleven,
+  .row.no-gutter .cols.eleven,
+  .rows.no-gutter .cols.eleven,
+  .row.no-gutter .col.twelve,
+  .rows.no-gutter .col.twelve,
+  .row.no-gutter .cols.twelve,
+  .rows.no-gutter .cols.twelve {
+    -webkit-box-flex: none;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
   }
 }
 @media only screen and (min-width: 998px) and (max-width: 1199px) {
